@@ -1,7 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      {{ appTitle }}
+    <ion-title class="title__link">
+      <a [routerLink]="['/home']">
+        {{ appTitle }}
+      </a>
     </ion-title>
+    <div class="header-nav">
+      <ul>
+        <li><a [routerLink]="['/features']">ABOUT |</a></li>
+        <li><a [routerLink]="['/pricing']">DISCOUNTS |</a></li>
+        <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/register']">Sign Up |</a></li>
+        <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/login']">Login</a></li>
+        <li><a *ngIf="isLoggedIn$ | async" [routerLink]="['/admin']">{{displayName$ | async}}</a></li>
+        <li><a (click)="onLogUserOut()" *ngIf="isLoggedIn$ | async">| Logout</a></li>
+      </ul>
+    </div>
   </ion-toolbar>
 </ion-header>
