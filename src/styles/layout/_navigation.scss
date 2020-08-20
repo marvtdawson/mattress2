@@ -1,0 +1,167 @@
+ion-header {
+
+  // 1024px
+  @media only screen and (max-width: $bp-larger-1024) {
+    min-height: 3rem;
+  }
+
+  & ion-toolbar {
+    width: 90%;
+    margin: 0 auto;
+
+    // 1024px
+    @media only screen and (max-width: $bp-larger-1024) {
+      min-height: 3rem;
+    }
+
+    & ion-buttons {
+
+      @media only screen and (max-width: $bp-medium) {
+        display: block;
+      }
+
+      & ion-menu-button {
+
+        // 1024px
+        /*@media only screen and (max-width: $bp-medium-large) {
+          display: block;
+        }*/
+
+        @media only screen and (max-width: $bp-medium) {
+          display: block;
+        }
+
+      }
+    }
+
+    & ion-title{
+
+      &.title__link {
+
+        text-align: center;
+        width: 27%;
+
+        // 1200px
+        @media only screen and (max-width: $bp-largest) {
+          width: 20%;
+        }
+
+        // 1024px
+        @media only screen and (max-width: $bp-larger-1024) {
+          width: 35%;
+        }
+
+        // 800px
+        @media only screen and (max-width: $bp-medium-large) {
+          width: 45%;
+        }
+
+        // 768px
+        @media only screen and (max-width: $bp-medium) {
+          width: 100%;
+        }
+
+        // 600px
+        @media only screen and (max-width: $bp-medium-small) {
+          width: 90%;
+        }
+
+        // 568px
+        @media only screen and (max-width: $bp-small) {
+          // width: 100%;
+        }
+
+        // 414px to 568px
+        @media only screen and (min-width: $bp-smaller) and (max-width: $bp-small) {
+          width: 53%;
+          margin: 0 0 0 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller-2) {
+          width: 85%;
+        }
+
+        // 320px to 375px
+        @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
+          width: 60%;
+          margin: 0 0 0 1.9rem;
+        }
+
+        & :hover {
+          cursor: pointer;
+        }
+
+        & a {
+          text-decoration: none;
+
+          @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+          }
+          @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
+            font-size: 1.4rem;
+          }
+
+          & :hover {
+            text-decoration: none;
+          }
+
+          & ion-item {
+            font-size: 1.6rem;
+
+            @media only screen and (max-width: $bp-medium) {
+              width: 80%;
+              margin: 0 auto;
+            }
+
+          }
+
+          .tag-line {
+            font-size: .8rem;
+            text-decoration: none;
+
+            @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
+              display: none;
+            }
+          }
+
+
+        }
+      }
+    }
+
+    & .header-nav {
+      width: 30%;
+      display: block;
+      right: 4rem;
+      position: absolute;
+      z-index: 10;
+      top: 1.2rem;
+
+      & ul {
+        float: left;
+        & li {
+          list-style-type: none;
+          float: left;
+          // padding: 0.3px;
+          & a {
+            text-decoration: none;
+             // left: 15px;
+            padding: 3px;
+          }
+        }
+      }
+
+      // 800px
+      @media only screen and (max-width: $bp-largest) {
+        width: 30%;
+        right: 1rem;
+      }
+
+      // 768px
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+  }
+}

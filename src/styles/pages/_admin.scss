@@ -1,0 +1,127 @@
+@import 'src/styles/base/base';
+
+.admin-user {
+
+  &__sidenav {
+    width: 14% !important;
+    padding: 5px;
+    border-right: 1px solid green;
+    margin-top: 0.5rem;
+    text-align: center;
+
+    @media only screen and (min-width: $bp-medium-small) and (max-width: $bp-medium) {
+      width: 10% !important;
+    }
+
+    @media only screen and (min-width: $bp-smallest) and (max-width: $bp-small) {
+      width: 20% !important;
+    }
+
+    &__admin-logo {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+      &__btn-container {
+      margin-bottom: 1rem;
+      align-content: center;
+      // text-align: center;
+      vertical-align: center;
+
+      & a {
+
+        font-size: 0.9rem;
+
+        @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
+          font-size: 0.4rem;
+        }
+
+        & span {
+          margin: 0.2rem 0 0 1.5rem;
+          text-align: right;
+          justify-content: right;
+          position: absolute;
+
+          @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
+            margin: 0;
+            display: none;
+            visibility: hidden;
+          }
+        }
+
+      }
+    }
+    }
+
+
+  &__content {
+    width: 100%;
+    float: left;
+    left: 0.5%;
+    position: relative;
+    // border: 1px solid orange;
+    align-content: center;
+
+    &__row-1 {
+      display: inline;
+
+      &__profile-header {
+
+        &--div-1 {
+          width: 33%;
+          display: inline-block;
+
+          @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+          }
+        }
+
+        &--div-2 {
+          width: 33%;
+          display: inline-block;
+          text-align: left;
+          position: relative;
+          left: 1rem;
+
+          @media only screen and (max-width: $bp-medium) {
+            display: none;
+          }
+        }
+
+        &--div-3 {
+          width: 33%;
+          display: inline-block;
+          text-align: left;
+
+          @media only screen and (max-width: $bp-medium) {
+            display: none;
+          }
+        }
+
+      }
+
+    }
+
+    &__row-2 {
+
+      &__column {
+        min-height: 40rem;
+
+        & ion-content {
+          top: 2rem;
+        }
+      }
+    }
+  }
+
+}
+
+.main-content {
+  min-height: 40rem;
+
+  @media only screen and (min-width: $bp-large) {
+    min-height: 46rem;
+  }
+
+
+}

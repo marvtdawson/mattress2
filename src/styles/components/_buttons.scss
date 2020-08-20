@@ -1,0 +1,19 @@
+.btn {
+  width: 30%;
+  margin: 3rem auto;
+  height: 3rem;
+  // padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.4rem;
+
+  align-self: center;
+  justify-self: center;
+
+  &:hover {
+    color: #ff6200;
+    background-color: #FFF;
+  }
+}

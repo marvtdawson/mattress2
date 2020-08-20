@@ -1,3 +1,79 @@
-<p>
-  footer works!
-</p>
+<!-- START FOOTER CONTAINER -->
+<ion-footer class="footer">
+  <ion-grid>
+    <ion-row class="footer__social-icons-wrapper">
+      <ion-col class="footer__social-icons-wrapper__box">
+        <a href="https://www.facebook.com/whoslaundry09" target="_blank">
+          <i class="fab fa-facebook-f fa-3x"></i>
+        </a>
+      </ion-col>
+      <ion-col class="footer__social-icons-wrapper__box">
+        <a href="https://www.linkedin.com/in/getvrom09" target="_blank">
+          <i class="fab fa-linkedin-in fa-3x"></i>
+        </a>
+      </ion-col>
+      <ion-col class="footer__social-icons-wrapper__box">
+        <a href="https://twitter.com/getvrom09" target="_blank">
+          <i class="fab fa-twitter fa-3x"></i>
+        </a>
+      </ion-col>
+      <ion-col class="footer__social-icons-wrapper__box">
+        <a href="https://www.instagram.com/getvrom09/" target="_blank">
+          <i class="fab fa-instagram fa-3x"></i>
+        </a>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="footer__wrapper">
+      <ion-col>
+        <div class="footer__wrapper__nav-subdiv">
+          <h2>Manage Anywhere</h2>
+          <p class="footer__wrapper__nav-subdiv__contact-text">Stay Connected To Your Business</p>
+          <button class="footer__wrapper__nav-subdiv__btn" (click)="goToServicesPage()">
+            Learn More
+          </button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="footer__wrapper__nav-subdiv">
+          <h2>Quick Request</h2>
+          <p class="footer__wrapper__nav-subdiv__contact-text">My Apartment Requires Service</p>
+          <button class="footer__wrapper__nav-subdiv__btn"
+                  (click)="isUserLogin()">Request Service
+          </button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="footer__wrapper__nav-subdiv">
+          <h2>Got Questions?</h2>
+          <p class="footer__wrapper__nav-subdiv__contact-text">Tell us how we can serve you.</p>
+          <button class="footer__wrapper__nav-subdiv__btn" (click)="getContactForm()">Contact
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <section>
+      <div class="network-status">
+        <!--span>
+            Connection Status: {{ networkStatus | json }}
+        </span-->
+      </div>
+    </section>
+    <ion-row class="footer__site-info">
+      <ion-col size="12" size-sm class="ion-float-left">
+        <div class="footer__site-info__content-1" >
+          &copy; {{ date }} <a [routerLink]="['/home']">{{ siteFooterName }}</a>
+          All Rights Reserved.
+        </div>
+      </ion-col>
+      <ion-col size="12" size-sm class="ion-float-right">
+        <div  class="footer__site-info__content-2">
+          <a [routerLink]="['/terms-of-service']">Terms of Service |</a>
+          <a [routerLink]="['/privacy']"> Privacy Statement |</a>
+          <a [routerLink]="['/sitemap']"> Sitemap</a>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
+
