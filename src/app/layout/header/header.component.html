@@ -7,8 +7,8 @@
     </ion-title>
     <div class="header-nav">
       <ul>
-        <li><a [routerLink]="['/features']">ABOUT |</a></li>
-        <li><a [routerLink]="['/pricing']">DISCOUNTS |</a></li>
+        <li><a [routerLink]="['/pricing']"><ion-icon name="newspaper-outline"></ion-icon> Weekly Ad |</a></li>
+        <li><a [routerLink]="['/features']"><ion-icon name="person-outline"></ion-icon> Account |</a></li>
         <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/register']">Sign Up |</a></li>
         <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/login']">Login</a></li>
         <li><a *ngIf="isLoggedIn$ | async" [routerLink]="['/admin']">{{displayName$ | async}}</a></li>
