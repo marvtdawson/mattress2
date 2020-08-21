@@ -11,6 +11,6 @@ export class SiteDataService {
   siteKeywords = 'Mattress, Things, Mattress and Things, Mattress & Things' +
       'Marvin Dawson, Dawson Technical Consulting LLC';
   year: number = new Date().getFullYear();
-  siteLogo = '../assets/shapes.svg';
+  siteLogo = '../assets/img/site/mat_logo3_512_x_512.jpg';
   constructor() { }
 }

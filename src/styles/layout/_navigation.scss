@@ -38,8 +38,10 @@ ion-header {
 
       &.title__link {
 
-        text-align: center;
+        display: flex;
+        align-items: center;
         width: 27%;
+        float: left;
 
         // 1200px
         @media only screen and (max-width: $bp-largest) {
@@ -91,8 +93,13 @@ ion-header {
           cursor: pointer;
         }
 
+        .app_logo {
+          width: 18%;
+        }
+
         & a {
           text-decoration: none;
+          float: left;
 
           @media only screen and (max-width: $bp-medium) {
             width: 100%;
@@ -124,8 +131,8 @@ ion-header {
             }
           }
 
-
         }
+
       }
     }
 

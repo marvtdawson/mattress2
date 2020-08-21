@@ -10,6 +10,8 @@ import {SiteDataService} from '../../../providers/site-data/site-data.service';
 export class HeaderComponent implements OnInit {
 
   appTitle = this.siteData.siteName;
+  appLogo = this.siteData.siteLogo;
+
   constructor(private siteData: SiteDataService) { }
 
   ngOnInit() {}
