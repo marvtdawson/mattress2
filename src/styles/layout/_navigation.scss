@@ -34,13 +34,13 @@ ion-header {
       }
     }
 
-    & ion-title{
+    & ion-title {
 
-      &.title__link {
+      width: auto;
 
-        display: flex;
-        align-items: center;
+      .title-wrapper {
         width: 27%;
+        margin: 0 auto;
         float: left;
 
         // 1200px
@@ -79,6 +79,7 @@ ion-header {
           margin: 0 0 0 2.5rem;
         }
 
+        // 411px to 414px
         @media only screen and (max-width: $bp-smaller-2) {
           width: 85%;
         }
@@ -89,30 +90,16 @@ ion-header {
           margin: 0 0 0 1.9rem;
         }
 
-        & :hover {
-          cursor: pointer;
-        }
-
-        .app_logo {
-          width: 18%;
-        }
-
-        & a {
-          text-decoration: none;
+        &__col {
           float: left;
+          width: 15%;
+          padding: 3px;
 
-          @media only screen and (max-width: $bp-medium) {
-            width: 100%;
-          }
-          @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
-            font-size: 1.4rem;
-          }
-
-          & :hover {
-            text-decoration: none;
+          &__logo {
+            // width: 18%;
           }
 
-          & ion-item {
+          &__text {
             font-size: 1.6rem;
 
             @media only screen and (max-width: $bp-medium) {
@@ -122,18 +109,33 @@ ion-header {
 
           }
 
-          .tag-line {
-            font-size: .8rem;
+          & a {
             text-decoration: none;
+            float: left;
 
-            @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
-              display: none;
+            @media only screen and (max-width: $bp-medium) {
+              width: 100%;
             }
+            @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
+              font-size: 1.4rem;
+            }
+
+            & :hover {
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+
+          & ::after {
+            content: "";
+            clear: both;
+            display: table;
           }
 
         }
 
       }
+
     }
 
     & .header-nav {
@@ -146,13 +148,14 @@ ion-header {
 
       & ul {
         float: left;
+
         & li {
           list-style-type: none;
           float: left;
           // padding: 0.3px;
           & a {
             text-decoration: none;
-             // left: 15px;
+            // left: 15px;
             padding: 3px;
           }
         }

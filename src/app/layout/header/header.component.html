@@ -1,20 +1,36 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title class="title__link">
-      <ion-img class="app_logo" [src]="appLogo"></ion-img>
-      <a [routerLink]="['/home']">
-        {{ appTitle }}
-      </a>
-    </ion-title>
-    <div class="header-nav">
-      <ul>
-        <li><a [routerLink]="['/pricing']"><ion-icon name="newspaper-outline"></ion-icon> Weekly Ad |</a></li>
-        <li><a [routerLink]="['/features']"><ion-icon name="person-outline"></ion-icon> Account |</a></li>
-        <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/register']">Sign Up |</a></li>
-        <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/login']">Login</a></li>
-        <li><a *ngIf="isLoggedIn$ | async" [routerLink]="['/admin']">{{displayName$ | async}}</a></li>
-        <li><a (click)="onLogUserOut()" *ngIf="isLoggedIn$ | async">| Logout</a></li>
-      </ul>
-    </div>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            <div class="title-wrapper">
+                <div class="title-wrapper__col">
+                    <a [routerLink]="['/home']">
+                        <ion-img class="title-wrapper__col__logo" [src]="appLogo"></ion-img>
+                    </a>
+                </div>
+                <div class="title-wrapper__col">
+                    <a [routerLink]="['/home']">
+                        <div class="title-wrapper__col__text">
+                            {{ appTitle }}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </ion-title>
+
+
+        <div class="header-nav">
+            <ul>
+                <li><a [routerLink]="['/pricing']">
+                    <ion-icon name="newspaper-outline"></ion-icon>
+                    Weekly Ad |</a></li>
+                <li><a [routerLink]="['/features']">
+                    <ion-icon name="person-outline"></ion-icon>
+                    Account |</a></li>
+                <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/register']">Sign Up |</a></li>
+                <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/login']">Login</a></li>
+                <li><a *ngIf="isLoggedIn$ | async" [routerLink]="['/admin']">{{displayName$ | async}}</a></li>
+                <li><a (click)="onLogUserOut()" *ngIf="isLoggedIn$ | async">| Logout</a></li>
+            </ul>
+        </div>
+    </ion-toolbar>
 </ion-header>
