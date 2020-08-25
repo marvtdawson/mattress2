@@ -11,6 +11,11 @@ export class HeaderComponent implements OnInit {
 
   appTitle = this.siteData.siteName;
   appLogo = this.siteData.siteLogo;
+  isLoggedOut$: any;
+  isLoggedIn$: any;
+  displayName$: any;
+
+  onLogUserOut() {}
 
   constructor(private siteData: SiteDataService) { }
 
