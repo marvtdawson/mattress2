@@ -17,6 +17,8 @@ export class FooterComponent implements OnInit {
 
   getContactForm() {}
 
-  isUserLogin() {}
+  askMAT() {}
+
+  getWeeklyAd() {}
 
 }
