@@ -30,4 +30,5 @@ npm-debug.log*
 /plugins
 /www
 
+# firebase hosting
 /src/app/app-firebase-config.ts
