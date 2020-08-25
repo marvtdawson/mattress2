@@ -6,7 +6,7 @@
                   to right bottom,
                   rgba($color-smokey-grey, 0.6),
                   rgba($color-grey-dark, 0.6));
-  // url('/src/assets/img/kitch/kitchen_image_2.jpg');
+  //url('/src/assets/img/kitch/kitchen_image_2.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -58,7 +58,7 @@
       grid-template-rows: repeat(4, 1fr);
 
       @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
-        width: 0% !important;
+        width: 0 !important;
         visibility: hidden;
         display: none;
       }
