@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ProductsPageRoutingModule } from './products-routing.module';
+import { WeeklyAdPageRoutingModule } from './weekly-ad-routing.module';
 
-import { ProductsPage } from './products.page';
+import { WeeklyAdPage } from './weekly-ad.page';
 import {LayoutModule} from '../../../layout/layout.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import {LayoutModule} from '../../../layout/layout.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ProductsPageRoutingModule,
+    WeeklyAdPageRoutingModule,
     LayoutModule
   ],
-  declarations: [ProductsPage]
+  declarations: [WeeklyAdPage]
 })
-export class ProductsPageModule {}
+export class WeeklyAdPageModule {}

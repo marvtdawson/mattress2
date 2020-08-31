@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'wish-list',
     loadChildren: () => import('./admin/wish-list/wish-list/wish-list.module').then( m => m.WishListPageModule)
   },
+  {
+    path: 'weekly-ad',
+    loadChildren: () => import('./admin/weekly-ad/weekly-ad/weekly-ad.module').then( m => m.WeeklyAdPageModule)
+  },
 ];
 
 @NgModule({
