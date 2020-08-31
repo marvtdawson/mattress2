@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   pageTitle = 'Home';
-  testImg = '../assets/img/bed_rm/king_walnut_cherry.jpg';
+  testImg = '../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg';
   constructor() {}
 
 }

@@ -141,7 +141,7 @@ ion-header {
     }
 
     & .header-nav {
-      width: 25%;
+      width: 35%;
       display: block;
       right: 2rem;
       position: absolute;
@@ -154,7 +154,7 @@ ion-header {
         & li {
           list-style-type: none;
           float: left;
-          // padding: 0.3px;
+          padding: 3px;
           & a {
             text-decoration: none;
             // left: 15px;
