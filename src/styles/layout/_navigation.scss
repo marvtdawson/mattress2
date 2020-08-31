@@ -159,6 +159,11 @@ ion-header {
             text-decoration: none;
             // left: 15px;
             padding: 3px;
+
+            & ion-icon {
+              font-size: 1.3rem;
+              right: 1rem;
+            }
           }
         }
       }
