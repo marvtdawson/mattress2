@@ -16,8 +16,8 @@
 .shop-by-department,
 .features,
 .prices,
-.customer-satisfaction,
-.twitter-widget{
+.customer-satisfaction
+{
   @extend %section-default;
 
   & h2 {
