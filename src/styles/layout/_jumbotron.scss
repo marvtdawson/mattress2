@@ -9,10 +9,10 @@
   //url('/src/assets/img/kitch/kitchen_image_2.jpg');
   background-size: cover;
   background-position: top;
-  position: relative;
+  // position: relative;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(665px, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(665px, 1fr));
 
   margin-bottom: 1rem;
 
@@ -31,7 +31,7 @@
 
   }
 
-  &__col-1 {
+  /*&__col-1 {
 
     &__text-wrapper {
       width: 85%;
@@ -104,6 +104,6 @@
         }
       }
     }
-  }
+  }*/
 
 }

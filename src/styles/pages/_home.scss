@@ -8,26 +8,23 @@
 }
 
 %header-defaults {
-  text-align: center;
-  font-size: $font-section-header-size;
-  color: #000000;
+    text-align: center;
+    font-size: $font-section-header-size;
+    color: #000000;
 }
 
 .shop-by-department,
-.features,
-.prices,
-.customer-satisfaction
-{
+.weekly-ad,
+.follow-us,
+.subscribe {
   @extend %section-default;
-
-  & h2 {
-    font-size: 1.5rem;
-    color: black;
-  }
+  @extend %header-defaults;
 }
 
 /* shop by department card */
 .shop-by-department {
+  margin: 1.3rem auto 5rem;
+  display: grid;
 
   &__text-wrapper{
 
@@ -41,9 +38,9 @@
 
 }
 
-/* features card */
-.features {
-  // @extend %welcome-width;
+/* weekly-ad card */
+.weekly-ad {
+
   @extend %section-default;
 
   &__content {
@@ -99,46 +96,5 @@
         margin-left: 2rem;
       }
     }
-  }
-}
-
-/* twitter app testimonies card */
-.twitter-widget {
-  @extend %section-default;
-
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-
-  &__box-wrapper {
-    padding: 1rem;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-
-    &__box {
-      // float: left;
-      width: 20rem;
-      height: 20rem;
-      margin-left: 4.5rem;
-      border: 1px solid #545454;
-      border-radius: 25px;
-      background-color: #545454;
-      align-content: center;
-
-      @media only screen and (max-width: $bp-medium){
-        width: 100%;
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-/* results card  */
-.results {
-  @extend %section-default;
-
-  &__content {
-    font-size: $font-primary-card-content-size;
   }
 }

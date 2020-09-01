@@ -1,50 +1,87 @@
 <!-- page header -->
 <app-header></app-header>
-<ion-content [fullscreen]="true">
+
+<ion-content >
+
   <!-- jumbotron / slider header -->
   <section class="jumbotron-header">
     <ion-row>
       <div class="jumbotron-header__img-wrapper">
         <ion-img class="jumbotron-header__img-wrapper__img" [src]="testImg"></ion-img>
       </div>
-      <!--<ion-col class="jumbotron-header__col-1">
-        <div class="jumbotron-header__col-1__text-wrapper">
-
-        </div>
-      </ion-col>
-      <ion-col class="jumbotron-header__col-2">
-        <ion-card class="jumbotron-header__col-2__profit-estimator-wrapper">
-          <ion-card-header>
-            <ion-card-subtitle class="jumbotron-header__col-2__profit-estimator-wrapper__title">
-
-            </ion-card-subtitle>
-          </ion-card-header>
-
-          <ion-card-content>
-
-          </ion-card-content>
-        </ion-card>
-      </ion-col>-->
     </ion-row>
   </section>
 
   <section class="shop-by-department">
-      <ion-row class="shop-by-department__row1">
-        <ion-col class="shop-by-department__row1__columns">Col 1</ion-col>
-        <ion-col class="shop-by-department__row1__columns">Col 2</ion-col>
-        <ion-col class="shop-by-department__row1__columns">Col 3</ion-col>
-        <ion-col class="shop-by-department__row1__columns">Col 4</ion-col>
-        <ion-col class="shop-by-department__row1__columns">Col 5</ion-col>
-      </ion-row>
-      <ion-row class="shop-by-department__row2">
-        <ion-col class="shop-by-department__row1__columns">Col 6</ion-col>
-        <ion-col class="shop-by-department__row1__columns">Col 7</ion-col>
-        <ion-col class="shop-by-department__row1__columns">Col 8</ion-col>
-        <ion-col class="shop-by-department__row1__columns">Col 9</ion-col>
-        <ion-col class="shop-by-department__row1__columns">Col 10</ion-col>
-      </ion-row>
+    <ion-card-header>
+      <ion-card-subtitle class="section-headings">
+        <h1>Departments</h1>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card>
+      <ion-card-content>
+        <ion-row class="shop-by-department__row1">
+          <ion-col class="shop-by-department__row1__columns">Col 1</ion-col>
+          <ion-col class="shop-by-department__row1__columns">Col 2</ion-col>
+          <ion-col class="shop-by-department__row1__columns">Col 3</ion-col>
+          <ion-col class="shop-by-department__row1__columns">Col 4</ion-col>
+          <ion-col class="shop-by-department__row1__columns">Col 5</ion-col>
+        </ion-row>
+        <ion-row class="shop-by-department__row2">
+          <ion-col class="shop-by-department__row1__columns">Col 6</ion-col>
+          <ion-col class="shop-by-department__row1__columns">Col 7</ion-col>
+          <ion-col class="shop-by-department__row1__columns">Col 8</ion-col>
+          <ion-col class="shop-by-department__row1__columns">Col 9</ion-col>
+          <ion-col class="shop-by-department__row1__columns">Col 10</ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+  </section>
+
+  <section class="subscribe">
+    <ion-card-header>
+      <ion-card-subtitle class="section-headings">
+        <h1>Subscribe</h1>
+        <h5></h5>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card>
+      <ion-card-content>
+
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section class="weekly-ad">
+    <ion-card-header>
+      <ion-card-subtitle class="weekly-ad__section-heading">
+        <h1>Weekly Ad</h1>
+        <h5>Hey we got deals too!</h5>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card>
+      <ion-card-content>
+
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section class="follow-us">
+    <ion-card-header>
+      <ion-card-subtitle class="section-headings">
+        <h1>Stay Connected</h1>
+        <h5>Follow Us On All Social Platforms.</h5>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card>
+      <ion-card-content>
+
+      </ion-card-content>
+    </ion-card>
   </section>
 
   <!-- page footer -->
   <app-footer></app-footer>
+
 </ion-content>
