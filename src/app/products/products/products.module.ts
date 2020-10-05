@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ProductsPageRoutingModule } from './products-routing.module';
 
 import { ProductsPage } from './products.page';
-import {LayoutModule} from '../../../layout/layout.module';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
   imports: [

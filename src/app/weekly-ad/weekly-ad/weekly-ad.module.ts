@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { WishListPageRoutingModule } from './wish-list-routing.module';
+import { WeeklyAdPageRoutingModule } from './weekly-ad-routing.module';
 
-import { WishListPage } from './wish-list.page';
-import {LayoutModule} from '../../../layout/layout.module';
+import { WeeklyAdPage } from './weekly-ad.page';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WishListPageRoutingModule,
+    WeeklyAdPageRoutingModule,
     LayoutModule
   ],
-  declarations: [WishListPage]
+  declarations: [WeeklyAdPage]
 })
-export class WishListPageModule {}
+export class WeeklyAdPageModule {}

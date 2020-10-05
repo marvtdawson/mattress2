@@ -12,21 +12,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'cart',
-    loadChildren: () => import('./admin/cart/cart/cart.module').then( m => m.CartPageModule)
-  },
-  {
-    path: 'products',
-    loadChildren: () => import('./admin/products/products/products.module').then( m => m.ProductsPageModule)
-  },
-  {
     path: 'wish-list',
-    loadChildren: () => import('./admin/wish-list/wish-list/wish-list.module').then( m => m.WishListPageModule)
+    loadChildren: () => import('./wish-list/wish-list/wish-list.module').then(m => m.WishListPageModule)
   },
   {
     path: 'weekly-ad',
-    loadChildren: () => import('./admin/weekly-ad/weekly-ad/weekly-ad.module').then( m => m.WeeklyAdPageModule)
-  },
+    loadChildren: () => import('./weekly-ad/weekly-ad/weekly-ad.module').then(m => m.WeeklyAdPageModule)
+  }
 ];
 
 @NgModule({
