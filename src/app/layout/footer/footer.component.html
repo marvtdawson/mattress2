@@ -1,86 +1,112 @@
 <!-- START FOOTER CONTAINER -->
 <ion-footer class="footer">
-  <ion-grid>
-    <ion-row class="footer__social-icons-wrapper">
-      <ion-col class="footer__social-icons-wrapper__box--signup">
-        <ion-item>
-          <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
-          <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
-        </ion-item>
-      </ion-col>
-      <ion-col class="footer__social-icons-wrapper__box--social-icons">
-        FOLLOW US
-        <a href="https://www.facebook.com/whoslaundry09" target="_blank">
-          <i class="fab fa-facebook-f fa-3x"></i>
-        </a>
-        <a href="https://twitter.com/getvrom09" target="_blank">
-          <i class="fab fa-twitter fa-3x"></i>
-        </a>
-        <a href="https://www.instagram.com/getvrom09/" target="_blank">
-          <i class="fab fa-instagram fa-3x"></i>
-        </a>
-        <a>
-          <i class="fab fa-pinterest-p"></i>
-        </a>
-        <a>
-          <i class="fab fa-youtube"></i>
-        </a>
-      </ion-col>
-      <ion-col class="footer__social-icons-wrapper__box--mobile-apps">
-        <i class="fal fa-mobile-alt"></i> Mobile apps
-      </ion-col>
-    </ion-row>
+    <ion-grid>
+        <ion-row class="footer__social-icons-wrapper">
+            <ion-col class="footer__social-icons-wrapper__box--signup">
+                <ion-item>
+                    <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
+                    <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
+                </ion-item>
+            </ion-col>
+            <ion-col class="footer__social-icons-wrapper__box--social-icons">
+                FOLLOW US
+                <a href="https://www.facebook.com/whoslaundry09" target="_blank">
+                    <i class="fab fa-facebook-f fa-3x"></i>
+                </a>
+                <a href="https://twitter.com/getvrom09" target="_blank">
+                    <i class="fab fa-twitter fa-3x"></i>
+                </a>
+                <a href="https://www.instagram.com/getvrom09/" target="_blank">
+                    <i class="fab fa-instagram fa-3x"></i>
+                </a>
+                <a>
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a>
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </ion-col>
+            <ion-col class="footer__social-icons-wrapper__box--mobile-apps">
+                <i class="fal fa-mobile-alt"></i> Mobile apps
+            </ion-col>
+        </ion-row>
 
-    <ion-row class="footer__wrapper">
-      <ion-col>
-        <div class="footer__wrapper__nav-subdiv">
-          <h2>Weekly Ad</h2>
-          <p class="footer__wrapper__nav-subdiv__contact-text">Check out this week's deals.</p>
-          <button class="footer__wrapper__nav-subdiv__btn" (click)="getWeeklyAd()">
-            Learn More
-          </button>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="footer__wrapper__nav-subdiv">
-          <h2>What Size Bed Is Right?</h2>
-          <p class="footer__wrapper__nav-subdiv__contact-text">Not sure if your bedroom is big enough?</p>
-          <button class="footer__wrapper__nav-subdiv__btn"
-                  (click)="askMAT()">Ask MAT
-          </button>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="footer__wrapper__nav-subdiv">
-          <h2>Got Questions?</h2>
-          <p class="footer__wrapper__nav-subdiv__contact-text">How can we help you sleep at night.</p>
-          <button class="footer__wrapper__nav-subdiv__btn" (click)="getContactForm()">Contact
-          </button>
-        </div>
-      </ion-col>
-    </ion-row>
-    <section>
-      <div class="network-status">
-        <!--span>
-            Connection Status: {{ networkStatus | json }}
-        </span-->
-      </div>
-    </section>
-    <ion-row class="footer__site-info">
-      <ion-col size="12" size-sm class="ion-float-left">
-        <div class="footer__site-info__content-1" >
-          &copy; {{ date }} <a [routerLink]="['/home']">{{ siteFooterName }}</a>
-          All Rights Reserved.
-        </div>
-      </ion-col>
-      <ion-col size="12" size-sm class="ion-float-right">
-        <div  class="footer__site-info__content-2">
-          <a [routerLink]="['/terms-of-service']">Terms of Service |</a>
-          <a [routerLink]="['/privacy']"> Privacy Statement |</a>
-          <a [routerLink]="['/sitemap']"> Sitemap</a>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+        <ion-row class="footer__wrapper">
+            <ion-col>
+                <div class="footer__wrapper__nav-subdiv">
+                    <ion-list>
+                        <ion-item-divider>
+                            <ion-label>About {{ siteName }}</ion-label>
+                        </ion-item-divider>
+                        <ion-item lines="none">
+                            <a href="#">Our History</a>
+                        </ion-item>
+                        <ion-item lines="none"><a href="#">About {{ siteName }} Store</a></ion-item>
+                        <ion-item lines="none"><a href="#">COVID-19 Customer Update</a></ion-item>
+                        <ion-item lines="none"><a href="#">Location</a></ion-item>
+                        <ion-item lines="none"><a href="#">Testimonials</a></ion-item>
+                    </ion-list>
+                </div>
+            </ion-col>
+            <ion-col>
+                <div class="footer__wrapper__nav-subdiv">
+                    <ion-list>
+                        <ion-item-divider>
+                            <ion-label>
+                                Customer Service
+                            </ion-label>
+                        </ion-item-divider>
+
+                    <ion-item lines="none"><a href="#">Delivery</a></ion-item>
+                    <ion-item lines="none"><a href="#">FAQ</a></ion-item>
+                    <ion-item lines="none"><a href="#">Returns</a></ion-item>
+                    <ion-item lines="none"><a href="#">Product Categories</a></ion-item>
+                    <ion-item lines="none"><a href="#">Price Match</a></ion-item>
+                    <ion-item lines="none"><a href="#">Warranty Information</a></ion-item>
+                    </ion-list>
+               </div>
+            </ion-col>
+            <ion-col>
+                <div class="footer__wrapper__nav-subdiv">
+                    <ion-list>
+                        <ion-item-divider>
+                            <ion-label>
+                                Got Questions?
+                            </ion-label>
+                        </ion-item-divider>
+                    <div class="footer__wrapper__nav-subdiv__subdiv-3">
+                        <ion-item lines="none" slot="center">How can we help you sleep at night.</ion-item>
+                        <ion-item lines="none">
+                            <button class="footer__wrapper__nav-subdiv__btn" (click)="getContactForm()">Contact
+                            </button>
+                        </ion-item>
+                    </div>
+                    </ion-list>
+                </div>
+            </ion-col>
+        </ion-row>
+        <section>
+            <div class="network-status">
+                <!--span>
+                    Connection Status: {{ networkStatus | json }}
+                </span-->
+            </div>
+        </section>
+        <ion-row class="footer__site-info">
+            <ion-col size="12" size-sm class="ion-float-left">
+                <div class="footer__site-info__content-1">
+                    &copy; {{ date }} <a [routerLink]="['/home']">{{ siteFooterName }}</a>
+                    All Rights Reserved.
+                </div>
+            </ion-col>
+            <ion-col size="12" size-sm class="ion-float-right">
+                <div class="footer__site-info__content-2">
+                    <a [routerLink]="['/terms-conditions']">Terms & Conditions |</a>
+                    <a [routerLink]="['/privacy']"> Privacy Policy |</a>
+                    <a [routerLink]="['/sitemap']"> Sitemap</a>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-footer>
 

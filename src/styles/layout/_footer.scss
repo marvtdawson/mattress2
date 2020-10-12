@@ -29,21 +29,27 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 33%);
-    // background-color: #545454;
+    background-color: #d9d9d9;
 
     &__box {
       width: 100%;
       display: grid;
-     // background-color: #545454;
       text-align: center;
+      background-color: #d9d9d9;
 
       &--signup {
         float: left;
         text-align: justify;
         display: inline;
+        background-color: #d9d9d9;
+
+        & ion-item {
+          background-color: #d9d9d9;
+        }
 
         & ion-input {
           width: 20rem;
+          background-color: #d9d9d9;
         }
 
         & ion-button {
@@ -85,6 +91,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    background-color: #d9d9d9;
 
     &__nav-subdiv {
       width: 100%;
@@ -94,7 +101,7 @@
       padding: 1rem;
 
       display: grid;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 1fr;
       grid-template-columns: 1fr;
       grid-column-gap: 2.5rem;
       // grid-row: 1 / -1;
@@ -148,13 +155,24 @@
           color: #ff6200;
         }
       }
-    }
 
+      &__subdiv-3 {
+
+        align-content: center;
+
+        & ion-item {
+          align-content: center;
+        }
+
+      }
+
+    }
   }
 
   &__site-info {
     width: 80%;
-    background-color: $bg-color;
+    //background-color: $bg-color;
+    background-color: #d9d9d9;
     margin: 0 auto;
     border-top: 1px solid #bebebe;
 
