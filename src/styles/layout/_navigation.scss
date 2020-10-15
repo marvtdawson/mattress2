@@ -1,5 +1,7 @@
 ion-header {
 
+  background-color: white;
+
   // 1024px
   @media only screen and (max-width: $bp-larger-1024) {
     min-height: 3rem;
@@ -103,6 +105,7 @@ ion-header {
 
           &__text {
             font-size: 1.6rem;
+            margin-top: 0.3rem;
 
             @media only screen and (max-width: $bp-medium) {
               width: 80%;
@@ -141,12 +144,12 @@ ion-header {
     }
 
     & .header-nav {
-      width: 25%;
+      width: 35%;
       display: block;
       right: 2rem;
       position: absolute;
       z-index: 10;
-      top: 1.2rem;
+      top: 0.8rem;
 
       & ul {
         float: left;
@@ -154,11 +157,16 @@ ion-header {
         & li {
           list-style-type: none;
           float: left;
-          // padding: 0.3px;
+          padding: 3px;
           & a {
             text-decoration: none;
             // left: 15px;
             padding: 3px;
+
+            & ion-icon {
+              font-size: 1.3rem;
+              right: 1rem;
+            }
           }
         }
       }

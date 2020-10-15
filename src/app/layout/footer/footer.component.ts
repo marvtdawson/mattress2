@@ -8,7 +8,7 @@ import {SiteDataService} from '../../../providers/site-data/site-data.service';
 })
 export class FooterComponent implements OnInit {
 
-  // siteName = this.siteData.siteName;
+  siteName = this.siteData.siteName;
   siteFooterName = this.siteData.siteFooterName;
   date = new Date().getFullYear();
   constructor(private siteData: SiteDataService) { }

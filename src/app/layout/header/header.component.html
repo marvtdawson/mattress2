@@ -20,12 +20,29 @@
 
         <div class="header-nav">
             <ul>
-                <li><a [routerLink]="['/pricing']">
-                    <ion-icon name="newspaper-outline"></ion-icon>
-                    Weekly Ad |</a></li>
-                <li><a [routerLink]="['/features']">
-                    <ion-icon name="person-outline"></ion-icon>
-                    Account </a></li>
+                <li><a [routerLink]="['/weekly-ad']">
+                        <ion-icon name="newspaper-outline"></ion-icon>
+                        Weekly Ad
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/wish-list']">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        Wish List
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/cart']">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        Cart
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/admin/customers/profile']">
+                        <ion-icon name="person-outline"></ion-icon>
+                        Account
+                    </a>
+                </li>
                 <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/register']">Sign Up |</a></li>
                 <li><a *ngIf="isLoggedOut$ | async" [routerLink]="['/login']">Login</a></li>
                 <li><a *ngIf="isLoggedIn$ | async" [routerLink]="['/admin']">{{displayName$ | async}}</a></li>
