@@ -4,7 +4,8 @@
   min-height: 24rem;
   // margin: 0 auto;
   background-size: cover;
-  background-color: $bg-color;
+  background-color: #d9d9d9;
+  // background-color: $bg-color;
   padding: 1rem;
 
   display: grid;
@@ -27,18 +28,59 @@
     width: 99%;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 25%);
-    // background-color: #545454;
+    grid-template-columns: repeat(3, 33%);
+    background-color: #d9d9d9;
 
     &__box {
       width: 100%;
       display: grid;
-     // background-color: #545454;
       text-align: center;
+      background-color: #d9d9d9;
+
+      &--signup {
+        float: left;
+        text-align: justify;
+        display: inline;
+        background-color: #d9d9d9;
+
+        & ion-item {
+          background-color: #d9d9d9;
+
+          & .item-native { background: #d9d9d9 !important;}
+        }
+
+        & ion-input {
+          width: 20rem;
+          background-color: #d9d9d9;
+        }
+
+        & ion-button {
+          float: right;
+          display: inline;
+        }
+      }
+
+      &--social-icons {
+        text-align: center;
+
+        & i {
+          margin-left: 2.5rem;
+        }
+      }
+
+      &--mobile-apps {
+        text-align: right;
+        right: 5rem;
+        & i {
+          margin-right: 0.3rem;
+        }
+
+
+      }
     }
 
-    .fab {
-      font-size: 3rem;
+    .fab, .fal {
+      font-size: 1.5rem;
 
       @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium){
         font-size: 2rem;
@@ -51,6 +93,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    background-color: #d9d9d9;
 
     &__nav-subdiv {
       width: 100%;
@@ -58,9 +101,10 @@
       margin-right: 15rem;
       margin-bottom: 1.2rem;
       padding: 1rem;
+      background-color: #d9d9d9;
 
       display: grid;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 1fr;
       grid-template-columns: 1fr;
       grid-column-gap: 2.5rem;
       // grid-row: 1 / -1;
@@ -114,13 +158,24 @@
           color: #ff6200;
         }
       }
-    }
 
+      &__subdiv-3 {
+
+        align-content: center;
+
+        & ion-item {
+          align-content: center;
+        }
+
+      }
+
+    }
   }
 
   &__site-info {
     width: 80%;
-    background-color: $bg-color;
+    //background-color: $bg-color;
+    background-color: #d9d9d9;
     margin: 0 auto;
     border-top: 1px solid #bebebe;
 
