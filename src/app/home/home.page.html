@@ -19,18 +19,19 @@
       </ion-card-subtitle>
     </ion-card-header>
     <ion-card>
-      <ion-card-content class="shop-by-department__text-wrapper">
-            <ion-col class="shop-by-department__row1__columns">Col 1</ion-col>
-            <ion-col class="shop-by-department__row1__columns">Col 2</ion-col>
-            <ion-col class="shop-by-department__row1__columns">Col 3</ion-col>
-            <ion-col class="shop-by-department__row1__columns">Col 4</ion-col>
-            <ion-col class="shop-by-department__row1__columns">Col 5</ion-col>
-
-            <ion-col class="shop-by-department__row1__columns">Col 6</ion-col>
-            <ion-col class="shop-by-department__row1__columns">Col 7</ion-col>
-            <ion-col class="shop-by-department__row1__columns">Col 8</ion-col>
-            <ion-col class="shop-by-department__row1__columns">Col 9</ion-col>
-            <ion-col class="shop-by-department__row1__columns">Col 10</ion-col>
+      <ion-card-content class="shop-by-department__row-wrapper" >
+          <ion-row class="shop-by-department__row-wrapper__row">
+              <ion-col class="shop-by-department__row-wrapper__row__cols" *ngFor="let deps of departments">
+                  <a routerLink="{{ deps.linkPath }}">
+                      <div class="shop-by-department__row-wrapper__row__cols--img">
+                          {{ deps.linkImage }}
+                      </div>
+                      <div class="shop-by-department__row-wrapper__row__cols--text">
+                          {{ deps.linkText }}
+                      </div>
+                  </a>
+              </ion-col>
+          </ion-row>
       </ion-card-content>
     </ion-card>
   </section>
