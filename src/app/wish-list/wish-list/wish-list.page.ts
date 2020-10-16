@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WishListPage implements OnInit {
 
+  pageTitle = 'Wish List';
   constructor() { }
 
   ngOnInit() {

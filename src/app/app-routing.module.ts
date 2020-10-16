@@ -19,6 +19,18 @@ const routes: Routes = [
   {
     path: 'weekly-ad',
     loadChildren: () => import('./weekly-ad/weekly-ad.module').then(m => m.WeeklyAdPageModule)
+  },
+  {
+    path: 'terms-conditions',
+    loadChildren: () => import('./terms-conditions/terms-conditions.module').then( m => m.TermsConditionsPageModule)
+  },
+  {
+    path: 'privacy-policy',
+    loadChildren: () => import('./privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
+  },
+  {
+    path: 'sitemap',
+    loadChildren: () => import('./sitemap/sitemap.module').then( m => m.SitemapPageModule)
   }
 ];
 

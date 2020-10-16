@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { WeeklyAdPageRoutingModule } from './weekly-ad-routing.module';
 
 import { WeeklyAdPage } from './weekly-ad.page';
-import {LayoutModule} from '../../layout/layout.module';
+import {LayoutModule} from '../layout/layout.module';
 
 @NgModule({
   imports: [

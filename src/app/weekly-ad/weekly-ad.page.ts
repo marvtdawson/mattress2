@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeeklyAdPage implements OnInit {
 
+  pageTitle = 'Weekly Ad';
   constructor() { }
 
   ngOnInit() {
