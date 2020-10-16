@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'weekly-ad',
-    loadChildren: () => import('./weekly-ad/weekly-ad/weekly-ad.module').then(m => m.WeeklyAdPageModule)
+    loadChildren: () => import('./weekly-ad/weekly-ad.module').then(m => m.WeeklyAdPageModule)
   }
 ];
 
