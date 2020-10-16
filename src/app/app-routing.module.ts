@@ -31,6 +31,10 @@ const routes: Routes = [
   {
     path: 'sitemap',
     loadChildren: () => import('./sitemap/sitemap.module').then( m => m.SitemapPageModule)
+  },
+  {
+    path: 'mobile-app',
+    loadChildren: () => import('./mobile-app/mobile-app.module').then( m => m.MobileAppPageModule)
   }
 ];
 
