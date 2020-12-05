@@ -20,6 +20,12 @@ export class AdminPage implements OnInit {
         },
         {
             'user-role': 'SU',
+            linkPath: '/admin/manager/pages',
+            icon: 'fas fa-pencil-alt fa-2x',
+            linkText: 'Manage Pages'
+        },
+        {
+            'user-role': 'SU',
             linkPath: '/admin/manager/departments',
             icon: 'fas fa-store fa-2x',
             linkText: 'Manage Departments'
@@ -39,7 +45,7 @@ export class AdminPage implements OnInit {
         {
             userRole: 'SU',
             linkPath: '/admin/manager/requests',
-            icon: 'fad fa-tasks fa-2x',
+            icon: 'fad fa-truck fa-2x',
             linkText: 'Manage Delivery Requests'
         },
         {
