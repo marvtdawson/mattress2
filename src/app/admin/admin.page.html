@@ -1,0 +1,84 @@
+<!-- page header -->
+<app-header></app-header>
+
+<ion-content class="main-content">
+    <!--ion-card style="min-height: 40rem;"-->
+    <ion-grid>
+        <ion-row class="admin-user">
+            <ion-col size="xs" class="admin-user__sidenav">
+                <ion-list>
+                    <ion-item  lines="none" class="ion-align-self-center">
+                        <div class="admin-user__sidenav__admin-logo">
+                            <a [routerLink]="['/admin']">
+                                <ion-img class="admin-user__sidenav__admin-logo__img"
+                                         [src]="siteLogo">
+                                </ion-img>
+                            </a>
+                        </div>
+                    </ion-item>
+                    <!--ion-item lines="none"></ion-item-->
+                    <ion-item
+                            class="admin-user__sidenav__btn-container"
+                            lines="none"
+                            slot="start"
+                            *ngFor="let aSn of adminSideNav">
+                        <div *ngIf="aSn.userRole">
+
+                        </div>
+                        <div class="admin-user__sidenav__btn-container__icon">
+                            <a routerLink="{{ aSn.linkPath }}">
+                                <i class="{{ aSn.icon }}" title="{{ aSn.linkText }}"></i>
+                            </a>
+                        </div>
+                        <div class="admin-user__sidenav__btn-container__title">
+                            <a routerLink="{{ aSn.linkPath }}">
+                                {{ aSn.linkText }}
+                            </a>
+                        </div>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+            <ion-col class="admin-user__content text-center">
+                <ion-grid>
+                    <ion-row class="admin-user__content__row-1">
+                        <ion-col>
+                            <div class="admin-user__content__row-1__profile-header--div-1">
+                                <!--ion-icon slot="end"
+                                          name="camera">
+                                </ion-icon-->
+                                <ion-img [src]="default_image"></ion-img>
+                            </div>
+                            <div class="admin-user__content__row-1__profile-header--div-2">
+                                <ion-label>
+                                    <p><b>Rental Property:</b> {{ propertyName }} </p>
+                                    <p><b>Address:</b> {{ locationNumber }}</p>
+                                    <p><b>City:</b> {{ userCity }}</p>
+                                    <p><b>State:</b> {{ userState }}</p>
+                                    <p *ngIf="userZipCode "><b>Zip Code:</b> {{ userZipCode }} </p>
+                                </ion-label>
+                            </div>
+                            <div class="admin-user__content__row-1__profile-header--div-3">
+                                <ion-label>
+                                    <p><b>Location Info:</b> www.budgetsuites.com</p>
+                                    <p><b>Total Apartments:</b> {{ totalApartments }}</p>
+                                    <p><b>Office Hours:</b> 7 am - 10 pm</p>
+                                    <p><b>On Site Security:</b> Yes</p>
+                                    <p><b>On Site Maintenance:</b> Yes </p>
+                                </ion-label>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row class="admin-user__content__row-2">
+                        <ion-col class="admin-user__content__row-2__column">
+                            <ion-router-outlet></ion-router-outlet>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <!--/ion-card-->
+    <!-- app page footer -->
+    <app-footer></app-footer>
+</ion-content>

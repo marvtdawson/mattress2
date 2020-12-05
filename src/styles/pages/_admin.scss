@@ -28,6 +28,27 @@
       // text-align: center;
       vertical-align: center;
 
+        &__icon {
+          width: 25%;
+        }
+
+        &__title {
+          margin: 0.2rem 0 0 0.5rem;
+          //text-align: right;
+          //justify-content: right;
+          //position: absolute;
+
+          @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
+            margin: 0;
+            display: none;
+            visibility: hidden;
+          }
+
+          & a:hover {
+            text-decoration: none;
+          }
+        }
+
       & a {
 
         font-size: 0.9rem;

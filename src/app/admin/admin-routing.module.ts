@@ -6,9 +6,10 @@ import {LayoutModule} from '../layout/layout.module';
 import {ManagerPage} from './manager/manager.page';
 import {CustomersPage} from './customers/customers.page';
 import {ProfilePage} from './customers/profile/profile.page';
+import {AdminPage} from './admin.page';
 
 const adminChildRoutes: Routes = [
-    { path: 'admin', component: ManagerPage,
+    { path: 'admin', component: AdminPage,
         children: [
             {
                path: 'manager', component: ManagerPage,
