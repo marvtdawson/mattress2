@@ -9,6 +9,7 @@ import {ProfilePage} from './customers/profile/profile.page';
 import {AdminPage} from './admin.page';
 import {AddProductPage} from './manager/products/add-product/add-product.page';
 import {PrivacyPolicyPage} from './customers/privacy-policy/privacy-policy.page';
+import {WishListPage} from './customers/wish-list/wish-list/wish-list.page';
 
 const adminChildRoutes: Routes = [
     { path: 'admin', component: AdminPage,
@@ -22,7 +23,8 @@ const adminChildRoutes: Routes = [
             { path: 'customers',  component: CustomersPage,
                 children: [
                     { path: 'profile', component: ProfilePage},
-                    { path: 'privacy-policy', component: PrivacyPolicyPage}
+                    { path: 'privacy-policy', component: PrivacyPolicyPage},
+                    { path: 'wish-list', component: WishListPage}
                 ]
             }
         ]

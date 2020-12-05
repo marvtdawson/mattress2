@@ -43,12 +43,12 @@
                             <ion-label>About {{ siteName }}</ion-label>
                         </ion-item-divider>
                         <ion-item lines="none">
-                            <a href="#">Our History</a>
+                            <a [routerLink]="['/history']">Our History</a>
                         </ion-item>
-                        <ion-item lines="none"><a href="#">About {{ siteName }} Store</a></ion-item>
-                        <ion-item lines="none"><a href="#">COVID-19 Customer Update</a></ion-item>
-                        <ion-item lines="none"><a href="#">Location</a></ion-item>
-                        <ion-item lines="none"><a href="#">Testimonials</a></ion-item>
+                        <ion-item lines="none"><a [routerLink]="['/about']">About {{ siteName }} Store</a></ion-item>
+                        <ion-item lines="none"><a [routerLink]="['/covid']">COVID-19 Customer Update</a></ion-item>
+                        <ion-item lines="none"><a [routerLink]="['/location']">Location</a></ion-item>
+                        <ion-item lines="none"><a [routerLink]="['/testimonials']">Testimonials</a></ion-item>
                     </ion-list>
                 </div>
             </ion-col>
@@ -61,12 +61,12 @@
                             </ion-label>
                         </ion-item-divider>
 
-                    <ion-item lines="none"><a href="#">Delivery</a></ion-item>
-                    <ion-item lines="none"><a href="#">FAQ</a></ion-item>
-                    <ion-item lines="none"><a href="#">Returns</a></ion-item>
-                    <ion-item lines="none"><a href="#">Product Categories</a></ion-item>
-                    <ion-item lines="none"><a href="#">Price Match</a></ion-item>
-                    <ion-item lines="none"><a href="#">Warranty Information</a></ion-item>
+                    <ion-item lines="none"><a [routerLink]="['/delivery']">Delivery</a></ion-item>
+                    <ion-item lines="none"><a [routerLink]="['/faq']">FAQ</a></ion-item>
+                    <ion-item lines="none"><a [routerLink]="['/returns']">Returns</a></ion-item>
+                    <ion-item lines="none"><a [routerLink]="['/products']">Product Categories</a></ion-item>
+                    <ion-item lines="none"><a [routerLink]="['/price']">Price Match</a></ion-item>
+                    <ion-item lines="none"><a [routerLink]="['/warranty']">Warranty Information</a></ion-item>
                     </ion-list>
                </div>
             </ion-col>

@@ -13,10 +13,6 @@ const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'wish-list',
-        loadChildren: () => import('./wish-list/wish-list/wish-list.module').then(m => m.WishListPageModule)
-    },
-    {
         path: 'weekly-ad',
         loadChildren: () => import('./weekly-ad/weekly-ad.module').then(m => m.WeeklyAdPageModule)
     },
@@ -60,23 +56,30 @@ const routes: Routes = [
         path: 'testimonials',
         loadChildren: () => import('./about/testimonials/testimonials.module').then(m => m.TestimonialsPageModule)
     },
+    {
+        path: 'customer-service',
+        loadChildren: () => import('./customer-service/customer-service.module').then( m => m.CustomerServicePageModule)
+    },
   {
     path: 'delivery',
-    loadChildren: () => import('./delivery/delivery.module').then( m => m.DeliveryPageModule)
+    loadChildren: () => import('./customer-service/delivery/delivery.module').then(m => m.DeliveryPageModule)
   },
   {
     path: 'faq',
-    loadChildren: () => import('./faq/faq.module').then( m => m.FaqPageModule)
+    loadChildren: () => import('./customer-service/faq/faq.module').then(m => m.FaqPageModule)
   },
   {
     path: 'returns',
-    loadChildren: () => import('./returns/returns.module').then( m => m.ReturnsPageModule)
+    loadChildren: () => import('./customer-service/returns/returns.module').then(m => m.ReturnsPageModule)
   },
   {
     path: 'price',
-    loadChildren: () => import('./price/price.module').then( m => m.PricePageModule)
+    loadChildren: () => import('./customer-service/price/price.module').then(m => m.PricePageModule)
+  },
+  {
+    path: 'warranty',
+    loadChildren: () => import('./customer-service/warranty/warranty.module').then(m => m.WarrantyPageModule)
   }
-
 ];
 
 @NgModule({
