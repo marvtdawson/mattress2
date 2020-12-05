@@ -59,7 +59,23 @@ const routes: Routes = [
     {
         path: 'testimonials',
         loadChildren: () => import('./about/testimonials/testimonials.module').then(m => m.TestimonialsPageModule)
-    }
+    },
+  {
+    path: 'delivery',
+    loadChildren: () => import('./delivery/delivery.module').then( m => m.DeliveryPageModule)
+  },
+  {
+    path: 'faq',
+    loadChildren: () => import('./faq/faq.module').then( m => m.FaqPageModule)
+  },
+  {
+    path: 'returns',
+    loadChildren: () => import('./returns/returns.module').then( m => m.ReturnsPageModule)
+  },
+  {
+    path: 'price',
+    loadChildren: () => import('./price/price.module').then( m => m.PricePageModule)
+  }
 
 ];
 
