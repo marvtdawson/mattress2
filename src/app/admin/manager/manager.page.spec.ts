@@ -3,7 +3,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { ManagerPage } from './manager.page';
 
-describe('AdminManagerPage', () => {
+describe('ManagerPage', () => {
   let component: ManagerPage;
   let fixture: ComponentFixture<ManagerPage>;
 

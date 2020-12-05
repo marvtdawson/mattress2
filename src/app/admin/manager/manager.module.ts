@@ -4,17 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AdminManagerPageRoutingModule } from './manager-routing.module';
+import { ManagerPageRoutingModule } from './manager-routing.module';
 
 import { ManagerPage } from './manager.page';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AdminManagerPageRoutingModule
+    ManagerPageRoutingModule,
+    LayoutModule
   ],
   declarations: [ManagerPage]
 })
-export class AdminManagerPageModule {}
+export class ManagerPageModule {}
