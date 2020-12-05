@@ -1,84 +1,99 @@
 <!-- page header -->
 <app-header></app-header>
 
-<ion-content >
+<ion-content>
 
-  <!-- jumbotron / slider header -->
-  <section class="jumbotron-header">
-      <div class="jumbotron-header__img-wrapper">
-          <img class="jumbotron-header__img-wrapper--img"
-               src="../../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg">
+    <!-- jumbotron / slider header -->
+    <section class="jumbotron-header">
+        <div class="jumbotron-header__img-wrapper">
+            <img class="jumbotron-header__img-wrapper--img"
+                 src="../../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg">
 
-      </div>
-  </section>
+        </div>
+    </section>
 
-  <section class="shop-by-department">
-    <ion-card-header>
-      <ion-card-subtitle class="section-headings">
-        <h1>Departments</h1>
-      </ion-card-subtitle>
-    </ion-card-header>
-    <ion-card>
-      <ion-card-content class="shop-by-department__row-wrapper" >
-          <ion-row class="shop-by-department__row-wrapper__row">
-              <ion-col class="shop-by-department__row-wrapper__row__cols" *ngFor="let deps of departments">
-                  <a routerLink="{{ deps.linkPath }}">
-                      <div class="shop-by-department__row-wrapper__row__cols--img">
-                          {{ deps.linkImage }}
-                      </div>
-                      <div class="shop-by-department__row-wrapper__row__cols--text">
-                          {{ deps.linkText }}
-                      </div>
-                  </a>
-              </ion-col>
-          </ion-row>
-      </ion-card-content>
-    </ion-card>
-  </section>
+    <section class="shop-by-department">
+        <ion-card-header>
+            <ion-card-subtitle class="section-headings">
+                <h1>Shop By Department</h1>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content class="shop-by-department__row-wrapper">
+                <ion-row class="shop-by-department__row-wrapper__row">
+                    <ion-col class="shop-by-department__row-wrapper__row__cols" *ngFor="let deps of departments">
+                        <a routerLink="{{ deps.linkPath }}">
+                            <div class="shop-by-department__row-wrapper__row__cols--img">
+                                {{ deps.linkImage }}
+                            </div>
+                            <div class="shop-by-department__row-wrapper__row__cols--text">
+                                {{ deps.linkText }}
+                            </div>
+                        </a>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+        </ion-card>
+    </section>
 
-  <section class="subscribe">
-    <ion-card-header>
-      <ion-card-subtitle class="section-headings">
-        <h1>Subscribe</h1>
-        <h5></h5>
-      </ion-card-subtitle>
-    </ion-card-header>
-    <ion-card>
-      <ion-card-content>
+    <section class="best-deal">
+        <ion-card-header>
+            <ion-card-subtitle class="section-headings">
+                <h1>Best Mattress's Buys</h1>
+                <h5></h5>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content>
 
-      </ion-card-content>
-    </ion-card>
-  </section>
+            </ion-card-content>
+        </ion-card>
+    </section>
 
-  <section class="weekly-ad">
-    <ion-card-header>
-      <ion-card-subtitle class="weekly-ad__section-heading">
-        <h1>Weekly Ad</h1>
-        <h5>We've got deals too!</h5>
-      </ion-card-subtitle>
-    </ion-card-header>
-    <ion-card>
-      <ion-card-content>
+    <section class="subscribe">
+        <ion-card-header>
+            <ion-card-subtitle class="section-headings">
+                <h1>Subscribe</h1>
+                <h5></h5>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content>
 
-      </ion-card-content>
-    </ion-card>
-  </section>
+            </ion-card-content>
+        </ion-card>
+    </section>
 
-  <section class="follow-us">
-    <ion-card-header>
-      <ion-card-subtitle class="section-headings">
-        <h1>Stay Connected</h1>
-        <h5>Follow Us On All Social Platforms.</h5>
-      </ion-card-subtitle>
-    </ion-card-header>
-    <ion-card>
-      <ion-card-content>
+    <section class="follow-us">
+        <ion-card-header>
+            <ion-card-subtitle class="section-headings">
+                <h1>Stay Connected</h1>
+                <h5>Follow Us On All Social Platforms.</h5>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content>
 
-      </ion-card-content>
-    </ion-card>
-  </section>
+            </ion-card-content>
+        </ion-card>
+    </section>
 
-  <!-- page footer -->
-  <app-footer></app-footer>
+    <section class="weekly-ad">
+        <ion-card-header>
+            <ion-card-subtitle class="weekly-ad__section-heading">
+                <h1>Weekly Ad</h1>
+                <h5>We've got deals too!</h5>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content>
+
+            </ion-card-content>
+        </ion-card>
+    </section>
+
+
+    <!-- page footer -->
+    <app-footer></app-footer>
 
 </ion-content>
