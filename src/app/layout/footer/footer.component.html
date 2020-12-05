@@ -42,11 +42,11 @@
                         <ion-item-divider>
                             <ion-label>About {{ siteName }}</ion-label>
                         </ion-item-divider>
+                        <ion-item lines="none"><a [routerLink]="['/about']">About {{ siteName }}</a></ion-item>
                         <ion-item lines="none">
                             <a [routerLink]="['/history']">Our History</a>
                         </ion-item>
-                        <ion-item lines="none"><a [routerLink]="['/about']">About {{ siteName }} Store</a></ion-item>
-                        <ion-item lines="none"><a [routerLink]="['/covid']">COVID-19 Customer Update</a></ion-item>
+                        <ion-item lines="none"><a [routerLink]="['/covid']">COVID-19 Update</a></ion-item>
                         <ion-item lines="none"><a [routerLink]="['/location']">Location</a></ion-item>
                         <ion-item lines="none"><a [routerLink]="['/testimonials']">Testimonials</a></ion-item>
                     </ion-list>
@@ -64,7 +64,7 @@
                     <ion-item lines="none"><a [routerLink]="['/delivery']">Delivery</a></ion-item>
                     <ion-item lines="none"><a [routerLink]="['/faq']">FAQ</a></ion-item>
                     <ion-item lines="none"><a [routerLink]="['/returns']">Returns</a></ion-item>
-                    <ion-item lines="none"><a [routerLink]="['/products']">Product Categories</a></ion-item>
+                    <ion-item lines="none"><a [routerLink]="['/products']">Products</a></ion-item>
                     <ion-item lines="none"><a [routerLink]="['/price']">Price Match</a></ion-item>
                     <ion-item lines="none"><a [routerLink]="['/warranty']">Warranty Information</a></ion-item>
                     </ion-list>
