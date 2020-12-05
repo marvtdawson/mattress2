@@ -35,6 +35,10 @@ const routes: Routes = [
   {
     path: 'mobile-app',
     loadChildren: () => import('./mobile-app/mobile-app.module').then( m => m.MobileAppPageModule)
+  },
+  {
+    path: 'add-product',
+    loadChildren: () => import('./admin/manager/products/add-product/add-product.module').then(m => m.AddProductPageModule)
   }
 ];
 
