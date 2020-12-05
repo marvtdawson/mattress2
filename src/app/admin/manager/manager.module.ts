@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AdminManagerPageRoutingModule } from './admin-manager-routing.module';
+import { AdminManagerPageRoutingModule } from './manager-routing.module';
 
-import { AdminManagerPage } from './admin-manager.page';
+import { ManagerPage } from './manager.page';
 
 @NgModule({
   imports: [
@@ -15,6 +15,6 @@ import { AdminManagerPage } from './admin-manager.page';
     IonicModule,
     AdminManagerPageRoutingModule
   ],
-  declarations: [AdminManagerPage]
+  declarations: [ManagerPage]
 })
 export class AdminManagerPageModule {}

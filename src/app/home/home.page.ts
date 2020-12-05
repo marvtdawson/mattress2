@@ -12,7 +12,8 @@ export class HomePage {
   public departments = [
     {
       linkPath: '/mattresses',
-      linkImage: `${'../assets/img/matts/beautyrest_black_mariela.jpg'}`,
+      // linkImage: './assets/img/matts/beautyrest_black_mariela.jpg',
+      linkImage: this.testImg,
       linkText: 'Mattress'
     },
     {
