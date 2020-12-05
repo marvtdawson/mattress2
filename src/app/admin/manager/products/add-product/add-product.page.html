@@ -1,6 +1,18 @@
 <ion-content>
 
   This is the Add Product page
+<ion-card>
+  <ion-card-content>
+    <div class="products__image-upload">
+      <span>Products:</span>
+      <input type="file" text="Upload" placeholder="Upload" (change)="uploadImage($event)">
+      <button>
+        <ion-button shape="round" expand="block" color="light">Upload</ion-button>
+      </button>
+    </div>
+
+  </ion-card-content>
+</ion-card>
 
 
 
