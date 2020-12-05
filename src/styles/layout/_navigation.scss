@@ -1,3 +1,5 @@
+@import 'src/styles/base/_base.scss';
+
 ion-header {
 
   background-color: white;
@@ -44,6 +46,7 @@ ion-header {
         width: 27%;
         margin: 0 auto;
         float: left;
+        display: inline;
 
         // 1200px
         @media only screen and (max-width: $bp-largest) {
@@ -88,19 +91,44 @@ ion-header {
           width: 85%;
         }
 
+        // 375px to 411px
+        @media only screen and (min-width: $bp-smaller-1) and (max-width: $bp-smaller-2) {
+
+        }
+
         // 320px to 375px
         @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
           width: 60%;
           margin: 0 0 0 1.9rem;
+          font-size: $bp-smallest-font-size;
         }
 
-        &__col {
+        &__logo-wrapper {
           float: left;
           width: 15%;
-          padding: 3px;
+          // padding: 3px;
+
+          // 375px to 411px
+          @media only screen and (min-width: $bp-smaller-1) and (max-width: $bp-smaller-2) {
+
+          }
+
+          // 320px to 375px
+          @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
+            width: 20%;
+          }
 
           &__logo {
             // width: 18%;
+          }
+        }
+
+        &__text-wrapper {
+          float: left;
+
+          // 320px to 375px
+          @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
+            width: 60%;
           }
 
           &__text {
@@ -112,30 +140,39 @@ ion-header {
               margin: 0 auto;
             }
 
-          }
-
-          & a {
-            text-decoration: none;
-            float: left;
-
-            @media only screen and (max-width: $bp-medium) {
-              width: 100%;
-            }
-            @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
-              font-size: 1.4rem;
+            // 320px to 375px
+            @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
+              width: 95%;
+              margin-top: 0.5rem;
+              font-size: $bp-smallest-font-size;
             }
 
-            & :hover {
+            & a {
               text-decoration: none;
-              cursor: pointer;
+              // float: left;
+
+              @media only screen and (max-width: $bp-medium) {
+                width: 100%;
+              }
+              @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
+                font-size: 1.4rem;
+              }
+
+              & :hover {
+                text-decoration: none;
+                cursor: pointer;
+              }
             }
+
+            & ::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+
           }
 
-          & ::after {
-            content: "";
-            clear: both;
-            display: table;
-          }
+
 
         }
 
