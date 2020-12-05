@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { CustomerServicePageRoutingModule } from './customer-service-routing.module';
 
 import { CustomerServicePage } from './customer-service.page';
+import {LayoutModule} from '../layout/layout.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    CustomerServicePageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        CustomerServicePageRoutingModule,
+        LayoutModule
+    ],
   declarations: [CustomerServicePage]
 })
 export class CustomerServicePageModule {}

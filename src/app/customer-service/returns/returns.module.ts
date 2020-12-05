@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ReturnsPageRoutingModule } from './returns-routing.module';
 
 import { ReturnsPage } from './returns.page';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    ReturnsPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        ReturnsPageRoutingModule,
+        LayoutModule
+    ],
   declarations: [ReturnsPage]
 })
 export class ReturnsPageModule {}

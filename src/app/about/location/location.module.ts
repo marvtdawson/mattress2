@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { LocationPageRoutingModule } from './location-routing.module';
 
 import { LocationPage } from './location.page';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    LocationPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        LocationPageRoutingModule,
+        LayoutModule
+    ],
   declarations: [LocationPage]
 })
 export class LocationPageModule {}

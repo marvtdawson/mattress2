@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { CovidPageRoutingModule } from './covid-routing.module';
 
 import { CovidPage } from './covid.page';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    CovidPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        CovidPageRoutingModule,
+        LayoutModule
+    ],
   declarations: [CovidPage]
 })
 export class CovidPageModule {}

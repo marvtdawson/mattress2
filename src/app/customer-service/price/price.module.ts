@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { PricePageRoutingModule } from './price-routing.module';
 
 import { PricePage } from './price.page';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    PricePageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        PricePageRoutingModule,
+        LayoutModule
+    ],
   declarations: [PricePage]
 })
 export class PricePageModule {}
