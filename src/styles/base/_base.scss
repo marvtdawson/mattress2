@@ -43,7 +43,11 @@ $bp-larger-1024: 64em; // 1024px view point = 1024 / 16 = 64
 $bp-large: 62.5em; // 1000px view point = 1000 / 16 = 62.5
 $bp-medium-larger: 56.25em; // 900px view point = 900 / 16 = 56.25
 $bp-medium-large: 50em; // 800px view point = 800 / 16 = 50
-$bp-medium: 48em; // 768px view point = 768 / 16 = 48
+
+// 768px view point = 768 / 16 = 48
+$bp-medium: 48em;
+$bp-medium-font-size: 1.2rem;
+
 $bp-medium-small: 37.5em; // 600px view point = 600 / 16 = 37.5
 $bp-small: 35.5em ; // 568px view point = 568 / 16 = 35.5
 $bp-smaller: 25.8em; // 414px view point = 414 / 16 = 25.8
