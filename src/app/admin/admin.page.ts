@@ -1,4 +1,5 @@
 import {Component, NgModule, OnInit} from '@angular/core';
+import {SiteDataService} from '../../providers/site-data/site-data.service';
 
 @Component({
     selector: 'app-admin',
@@ -8,6 +9,7 @@ import {Component, NgModule, OnInit} from '@angular/core';
 
 export class AdminPage implements OnInit {
 
+    siteLogo = this.siteData.siteLogo;
 
     public adminSideNav = [
         {
@@ -61,7 +63,7 @@ export class AdminPage implements OnInit {
     ];
 
 
-    constructor() { }
+    constructor(private siteData: SiteDataService) { }
 
     ngOnInit() {
     }
