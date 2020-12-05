@@ -11,68 +11,50 @@ export class AdminPage implements OnInit {
 
     public adminSideNav = [
         {
-            userRole : 'TU',
+            userRole : 'SU',
             linkPath: '/admin/manager/add-product',
-            icon: 'fad fa-concierge-bell fa-2x',
-            linkText: 'Product'
-        },
-        {
-            userRole: 'TU',
-            linkPath: '/admin/select-a-machine',
-            icon: 'fad fa-washer fa-2x',
-            linkText: 'Weekly Ad'
-        },
-        {
-            userRole : 'TU',
-            linkPath: '/admin/notify',
-            icon: 'fas fa-people-arrows fa-2x',
-            linkText: 'Wish List'
+            icon: 'fas fa-cash-register fa-2x',
+            linkText: 'Manage Products'
         },
         {
             'user-role': 'SU',
-            linkPath: '/admin/packages',
-            icon: 'fad fa-box-check fa-2x',
-            linkText: 'Package Notify'
+            linkPath: '/admin/manager/departments',
+            icon: 'fas fa-store fa-2x',
+            linkText: 'Manage Departments'
         },
         {
             userRole: 'SU',
-            linkPath: '/admin/client/tasks',
+            linkPath: '/admin/manager/weekly-ads',
+            icon: 'fas fa-ad fa-2x',
+            linkText: 'Manage Weekly Ads'
+        },
+        {
+            userRole : 'SU',
+            linkPath: '/admin/manager/wish-lists',
+            icon: 'fas fa-star-shooting fa-2x',
+            linkText: 'Manage Wish List'
+        },
+        {
+            userRole: 'SU',
+            linkPath: '/admin/manager/requests',
             icon: 'fad fa-tasks fa-2x',
             linkText: 'Manage Requests'
         },
         {
             userRole : 'SU',
-            linkPath: '/admin/client/manage-employees',
-            icon: 'icofont-users-alt-1 icofont-2x',
+            linkPath: '/admin/manager/social-media-accounts',
+            icon: 'fas fa-hashtag fa-2x',
+            linkText: 'Manage Social Media'
+        },
+        {
+            userRole : 'SU',
+            linkPath: '/admin/manager/manage-employees',
+            icon: 'fas fa-users fa-2x',
             linkText: 'Manage Employees'
         },
         {
-            userRole : 'SU',
-            linkPath: '/admin/client/manage-parking-spaces',
-            icon: 'fad fa-cars fa-2x',
-            linkText: 'Manage Parking'
-        },
-        {
-            userRole: 'SU',
-            linkPath: '/admin/client/manage-laundry-machines',
-            icon: 'fad fa-washer fa-2x',
-            linkText: 'Manage Machine'
-        },
-        {
-            userRole: 'SU',
-            linkPath: '/admin/contractors',
-            icon: 'fad fa-user-hard-hat fa-2x',
-            linkText: 'Manage Contractors'
-        },
-        {
-            userRole : 'SU',
-            linkPath: '/admin/tenants',
-            icon: 'fad fa-users fa-2x',
-            linkText: 'Manage Tenants'
-        },
-        {
-            userRole : 'SU',
-            linkPath: '/admin/profile',
+            userRole : 'CP',
+            linkPath: '/admin/customers/profile',
             icon: 'fa fa-cog fa-2x',
             linkText: 'Account Settings'
         },
