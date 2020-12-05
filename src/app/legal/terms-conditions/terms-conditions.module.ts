@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { TermsConditionsPageRoutingModule } from './terms-conditions-routing.module';
 
 import { TermsConditionsPage } from './terms-conditions.page';
-import {LayoutModule} from '../layout/layout.module';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
   imports: [

@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { MobileAppPageRoutingModule } from './mobile-app-routing.module';
 
 import { MobileAppPage } from './mobile-app.page';
-import {LayoutModule} from '../layout/layout.module';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
   imports: [

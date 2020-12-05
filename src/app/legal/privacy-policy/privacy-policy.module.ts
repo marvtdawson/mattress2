@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PrivacyPolicyPageRoutingModule } from './privacy-policy-routing.module';
 
 import { PrivacyPolicyPage } from './privacy-policy.page';
-import {LayoutModule} from '../layout/layout.module';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
   imports: [

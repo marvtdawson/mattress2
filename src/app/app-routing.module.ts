@@ -18,19 +18,19 @@ const routes: Routes = [
     },
     {
         path: 'terms-conditions',
-        loadChildren: () => import('./terms-conditions/terms-conditions.module').then(m => m.TermsConditionsPageModule)
+        loadChildren: () => import('./legal/terms-conditions/terms-conditions.module').then(m => m.TermsConditionsPageModule)
     },
     {
         path: 'privacy-policy',
-        loadChildren: () => import('./privacy-policy/privacy-policy.module').then(m => m.PrivacyPolicyPageModule)
+        loadChildren: () => import('./legal/privacy-policy/privacy-policy.module').then(m => m.PrivacyPolicyPageModule)
     },
     {
         path: 'sitemap',
-        loadChildren: () => import('./sitemap/sitemap.module').then(m => m.SitemapPageModule)
+        loadChildren: () => import('./legal/sitemap/sitemap.module').then(m => m.SitemapPageModule)
     },
     {
         path: 'mobile-app',
-        loadChildren: () => import('./mobile-app/mobile-app.module').then(m => m.MobileAppPageModule)
+        loadChildren: () => import('./customer-service/mobile-app/mobile-app.module').then(m => m.MobileAppPageModule)
     },
     {
         path: 'add-product',
@@ -79,6 +79,10 @@ const routes: Routes = [
   {
     path: 'warranty',
     loadChildren: () => import('./customer-service/warranty/warranty.module').then(m => m.WarrantyPageModule)
+  },
+  {
+    path: 'legal',
+    loadChildren: () => import('./legal/legal.module').then( m => m.LegalPageModule)
   }
 ];
 

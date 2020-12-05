@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { SitemapPageRoutingModule } from './sitemap-routing.module';
 
 import { SitemapPage } from './sitemap.page';
-import {LayoutModule} from '../layout/layout.module';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
   imports: [
