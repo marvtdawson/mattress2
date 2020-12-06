@@ -83,6 +83,10 @@ const routes: Routes = [
   {
     path: 'legal',
     loadChildren: () => import('./legal/legal.module').then( m => m.LegalPageModule)
+  },
+  {
+    path: 'mattresses',
+    loadChildren: () => import('./products/mattresses/mattresses.module').then(m => m.MattressesPageModule)
   }
 ];
 
