@@ -1,16 +1,20 @@
 <!-- START FOOTER CONTAINER -->
-<ion-footer class="footer">
-    <ion-grid>
-        <ion-row class="footer__social-icons-wrapper">
+<ion-footer >
+    <ion-grid class="footer">
+        <ion-row class="footer__signup-social-mobile-row-wrapper">
             <ion-col>
-                <div class="footer__social-icons-wrapper__box--signup">
-                    <ion-item>
-                        <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
-                        <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
-                    </ion-item>
-                </div>
+                <ion-grid class="footer__signup-social-mobile-row-wrapper__signup--form">
+                    <ion-row>
+                        <ion-col>
+                            <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
+                        </ion-col>
+                        <ion-col>
+                            <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
             </ion-col>
-            <ion-col class="footer__social-icons-wrapper__box--social-icons">
+            <ion-col class="footer__signup-social-mobile-row-wrapper__social-icons">
                 FOLLOW US
                 <a href="https://www.facebook.com/whoslaundry09" target="_blank">
                     <i class="fab fa-facebook-f fa-3x"></i>
@@ -28,7 +32,7 @@
                     <i class="fab fa-youtube"></i>
                 </a>
             </ion-col>
-            <ion-col class="footer__social-icons-wrapper__box--mobile-apps">
+            <ion-col class="footer__social-icons-row-wrapper__mobile-apps">
                 <a [routerLink]="['/mobile-app']">
                     <i class="fal fa-mobile-alt"></i> Mobile apps
                 </a>

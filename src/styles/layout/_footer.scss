@@ -1,17 +1,18 @@
+@import 'src/styles/abstract/_variables.scss';
+@import 'src/styles/base/_base.scss';
 .footer {
   bottom: 0;
   width: 100%;
   min-height: 24rem;
   // margin: 0 auto;
   background-size: cover;
-  background-color: #d9d9d9;
-  // background-color: $bg-color;
+  background-color: $default-background-color;
   padding: 1rem;
 
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 100%);
+  grid-template-rows: repeat(3, 100%);
   align-items: center;
   justify-items: center;
 
@@ -20,81 +21,75 @@
   }
 
 
-  & ion-grid {
-    width: 100%;
+  .fab, .fal {
+    font-size: 1.5rem;
+
+    @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
   }
 
-  &__social-icons-wrapper {
+
+  &__signup-social-mobile-row-wrapper {
     width: 99%;
     display: grid;
+    grid-gap: 3rem;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 33%);
-    background-color: #d9d9d9;
+    background-color: $default-background-color;
 
-    &__box {
+    // 320px to 375px
+    @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
+      //grid-template-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(98%, 1fr));
+    }
+
+    &__signup--form {
       width: 100%;
+      float: left;
+
       display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 2fr;
+
+      // text-align: center;
+      background-color: $default-background-color;
+      border-radius: 20px;
+
+      // 320px to 375px
+      @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
+        grid-template-rows: 2fr;
+        grid-template-columns: 1fr;
+        font-size: $bp-smallest-font-size;
+      }
+
+    }
+
+    &--social-icons {
       text-align: center;
-      background-color: #d9d9d9;
+      display: grid;
 
-      &--signup {
-        float: left;
-        text-align: justify;
-        display: inline;
-        background-color: #d9d9d9;
-        border-radius: 20px;
-
-        & ion-item {
-          background-color: #d9d9d9;
-
-          & .item-native { background: #d9d9d9 !important;}
-        }
-
-        & ion-input {
-          width: 20rem;
-          background-color: #d9d9d9;
-        }
-
-        & ion-button {
-          float: right;
-          display: inline;
-        }
-      }
-
-      &--social-icons {
-        text-align: center;
-
-        & i {
-          margin-left: 2.5rem;
-        }
-      }
-
-      &--mobile-apps {
-        text-align: right;
-        right: 5rem;
-        & i {
-          margin-right: 0.3rem;
-        }
-
-
+      & i {
+        margin-left: 2.5rem;
       }
     }
 
-    .fab, .fal {
-      font-size: 1.5rem;
+    &--mobile-apps {
+      display: grid;
+      text-align: right;
+      right: 5rem;
 
-      @media only screen and (min-width: $bp-smallest) and (max-width: $bp-medium){
-        font-size: 2rem;
+      & i {
+        margin-right: 0.3rem;
       }
     }
-
   }
 
   &__wrapper {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    background-color: #d9d9d9;
+    background-color: $default-background-color;
 
     &__nav-subdiv {
       width: 100%;
@@ -102,7 +97,7 @@
       margin-right: 15rem;
       margin-bottom: 1.2rem;
       padding: 1rem;
-      background-color: #d9d9d9;
+      background-color: $default-background-color;
 
       display: grid;
       grid-template-rows: 1fr;
@@ -182,8 +177,8 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-   /* grid-row: 2 / -1;
-    grid-column: 1 / span 3;*/
+    /* grid-row: 2 / -1;
+     grid-column: 1 / span 3;*/
 
     align-content: baseline;
 
@@ -202,6 +197,7 @@
       & a:visited, a:active {
         color: #bebebe;
       }
+
       & a:hover {
         color: #bebebe;
       }
@@ -244,17 +240,18 @@
 
     &__content-2 {
       width: 97%;
-        padding: 5px;
-        color: #bebebe;
-        font-size: 1rem;
-        text-align: right;
+      padding: 5px;
+      color: #bebebe;
+      font-size: 1rem;
+      text-align: right;
 
-        & a:visited, a:active {
-          color: #bebebe;
-        }
-        & a:hover {
-          color: #bebebe;
-        }
+      & a:visited, a:active {
+        color: #bebebe;
+      }
+
+      & a:hover {
+        color: #bebebe;
+      }
 
       @media only screen and (min-width: $bp-medium-small) and (max-width: $bp-medium-larger) {
         width: 100%;
@@ -263,7 +260,7 @@
         font-size: 0.9rem;
       }
 
-      @media only screen and (min-width: $bp-smaller) and (max-width: $bp-small)  {
+      @media only screen and (min-width: $bp-smaller) and (max-width: $bp-small) {
         width: 99%;
         padding: 0;
         text-align: center;
@@ -276,18 +273,6 @@
         text-align: center;
         font-size: 0.9rem;
       }
-
-
-
-
-      }
-
-
+    }
   }
-
-  .network-status {
-    color: #1e2023;
-    font-size: .7rem;
-  }
-
 }
