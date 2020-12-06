@@ -20,7 +20,7 @@
         <ion-card>
             <ion-card-content class="shop-by-department__row-wrapper">
                 <ion-grid>
-                    <ion-row class="shop-by-department__row-wrapper__row">
+                    <!--ion-row class="shop-by-department__row-wrapper__row">
                         <ion-col class="shop-by-department__row-wrapper__row__cols" *ngFor="let deps of departments">
                             <a routerLink="{{ deps.linkPath }}">
                                 <div class="shop-by-department__row-wrapper__row__cols--img">
@@ -31,6 +31,25 @@
                                 </div>
                             </a>
                         </ion-col>
+                    </ion-row-->
+                    <ion-row>
+                        <ion-col>
+
+                                <ion-label>Mattress</ion-label>
+                                <a routerLink="['/mattress']">
+                                    <ion-img [src]="mattressImg"></ion-img>
+                                </a>
+
+                        </ion-col>
+                        <ion-col></ion-col>
+                        <ion-col></ion-col>
+                        <ion-col></ion-col>
+                        <ion-col></ion-col>
+                        <ion-col></ion-col>
+                        <ion-col></ion-col>
+                        <ion-col></ion-col>
+                        <ion-col></ion-col>
+                        <ion-col></ion-col>
                     </ion-row>
                 </ion-grid>
             </ion-card-content>
