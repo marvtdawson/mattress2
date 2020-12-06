@@ -1,0 +1,107 @@
+<ion-footer>
+    <ion-toolbar>
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <!--ion-grid class="footer__signup-social-mobile-row-wrapper__signup--form"-->
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col>
+                                <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
+                            </ion-col>
+                            <ion-col>
+                                <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-col>
+                <!--ion-col class="footer__signup-social-mobile-row-wrapper__social-icons"-->
+                <ion-col>
+                    FOLLOW US
+                    <a href="https://www.facebook.com/whoslaundry09" target="_blank">
+                        <i class="fab fa-facebook-f fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/getvrom09" target="_blank">
+                        <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/getvrom09/" target="_blank">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                    <a>
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a>
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </ion-col>
+                <!--ion-col class="footer__social-icons-row-wrapper__mobile-apps"-->
+                <ion-col>
+                    <a [routerLink]="['/mobile-app']">
+                        <i class="fal fa-mobile-alt"></i> Mobile apps
+                    </a>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <!--div class="footer__wrapper__nav-subdiv"-->
+                    <div>
+                        <!--ion-list>
+                            <ion-item-divider>
+                                <ion-label>About {{ siteName }}</ion-label>
+                            </ion-item-divider>
+                            <ion-item lines="none"><a [routerLink]="['/about']">About {{ siteName }}</a></ion-item>
+                            <ion-item lines="none">
+                                <a [routerLink]="['/history']">Our History</a>
+                            </ion-item>
+                            <ion-item lines="none"><a [routerLink]="['/covid']">COVID-19 Update</a></ion-item>
+                            <ion-item lines="none"><a [routerLink]="['/location']">Location</a></ion-item>
+                            <ion-item lines="none"><a [routerLink]="['/testimonials']">Testimonials</a></ion-item>
+                        </ion-list-->
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <!--div class="footer__wrapper__nav-subdiv"-->
+                    <div>
+                        <!--ion-list-->
+                            <ion-item-divider>
+                                <ion-label>
+                                    Customer Service
+                                </ion-label>
+                            </ion-item-divider>
+
+                            <ion-item lines="none"><a [routerLink]="['/delivery']">Delivery</a></ion-item>
+                            <ion-item lines="none"><a [routerLink]="['/faq']">FAQ</a></ion-item>
+                            <ion-item lines="none"><a [routerLink]="['/returns']">Returns</a></ion-item>
+                            <ion-item lines="none"><a [routerLink]="['/products']">Products</a></ion-item>
+                            <ion-item lines="none"><a [routerLink]="['/price']">Price Match</a></ion-item>
+                            <ion-item lines="none"><a [routerLink]="['/warranty']">Warranty Information</a></ion-item>
+                        <!--/ion-list-->
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <!--div class="footer__wrapper__nav-subdiv"-->
+                    <div>
+                        <!--ion-list>
+                            <ion-item-divider>
+                                <ion-label>
+                                    Got Questions?
+                                </ion-label>
+                            </ion-item-divider>
+                            <div class="footer__wrapper__nav-subdiv__subdiv-3">
+                                <ion-item lines="none">
+                                    <ion-label>
+                                        How can we help you sleep at night.
+                                    </ion-label>
+                                </ion-item>
+                                <ion-item lines="none">
+                                    <button class="footer__wrapper__nav-subdiv__btn" (click)="getContactForm()">Contact
+                                    </button>
+                                </ion-item>
+                            </div>
+                        </ion-list-->
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+</ion-footer>

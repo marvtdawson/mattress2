@@ -1,9 +1,13 @@
 <!-- START FOOTER CONTAINER -->
 <ion-footer >
-    <ion-grid class="footer">
-        <ion-row class="footer__signup-social-mobile-row-wrapper">
+    <ion-toolbar>
+    <!--ion-grid class="footer"-->
+    <ion-grid>
+        <!--ion-row class="footer__signup-social-mobile-row-wrapper"-->
+        <ion-row>
             <ion-col>
-                <ion-grid class="footer__signup-social-mobile-row-wrapper__signup--form">
+                <!--ion-grid class="footer__signup-social-mobile-row-wrapper__signup--form"-->
+                <ion-grid>
                     <ion-row>
                         <ion-col>
                             <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
@@ -14,7 +18,8 @@
                     </ion-row>
                 </ion-grid>
             </ion-col>
-            <ion-col class="footer__signup-social-mobile-row-wrapper__social-icons">
+            <!--ion-col class="footer__signup-social-mobile-row-wrapper__social-icons"-->
+            <ion-col>
                 FOLLOW US
                 <a href="https://www.facebook.com/whoslaundry09" target="_blank">
                     <i class="fab fa-facebook-f fa-3x"></i>
@@ -32,16 +37,19 @@
                     <i class="fab fa-youtube"></i>
                 </a>
             </ion-col>
-            <ion-col class="footer__social-icons-row-wrapper__mobile-apps">
+            <!--ion-col class="footer__social-icons-row-wrapper__mobile-apps"-->
+            <ion-col>
                 <a [routerLink]="['/mobile-app']">
                     <i class="fal fa-mobile-alt"></i> Mobile apps
                 </a>
             </ion-col>
         </ion-row>
 
-        <ion-row class="footer__wrapper">
+        <!--ion-row class="footer__wrapper"-->
+        <ion-row>
             <ion-col>
-                <div class="footer__wrapper__nav-subdiv">
+                <!--div class="footer__wrapper__nav-subdiv"-->
+                <div>
                     <ion-list>
                         <ion-item-divider>
                             <ion-label>About {{ siteName }}</ion-label>
@@ -57,7 +65,8 @@
                 </div>
             </ion-col>
             <ion-col>
-                <div class="footer__wrapper__nav-subdiv">
+                <!--div class="footer__wrapper__nav-subdiv"-->
+                <div>
                     <ion-list>
                         <ion-item-divider>
                             <ion-label>
@@ -75,7 +84,8 @@
                </div>
             </ion-col>
             <ion-col>
-                <div class="footer__wrapper__nav-subdiv">
+                <!--div class="footer__wrapper__nav-subdiv"-->
+                <div>
                     <ion-list>
                         <ion-item-divider>
                             <ion-label>
@@ -98,7 +108,8 @@
             </ion-col>
         </ion-row>
 
-        <ion-row class="footer__site-info">
+        <!--ion-row class="footer__site-info"-->
+        <ion-row>
             <ion-col size="12" size-sm class="ion-float-left">
                 <div class="footer__site-info__content-1">
                     &copy; {{ date }} <a [routerLink]="['/home']">{{ siteFooterName }}</a>
@@ -114,5 +125,6 @@
             </ion-col>
         </ion-row>
     </ion-grid>
+    </ion-toolbar>
 </ion-footer>
 
