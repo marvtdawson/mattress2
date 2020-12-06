@@ -1,7 +1,8 @@
 <ion-footer>
     <ion-toolbar>
         <ion-grid>
-            <ion-row>
+            <ion-row class="signup-social-mobile-row-wrapper">
+                <!-- sign up form -->
                 <ion-col>
                     <!--ion-grid class="footer__signup-social-mobile-row-wrapper__signup--form"-->
                     <ion-grid>
@@ -15,27 +16,35 @@
                         </ion-row>
                     </ion-grid>
                 </ion-col>
+
+                <!-- follow us -->
                 <!--ion-col class="footer__signup-social-mobile-row-wrapper__social-icons"-->
                 <ion-col>
                     FOLLOW US
-                    <a href="https://www.facebook.com/whoslaundry09" target="_blank">
-                        <i class="fab fa-facebook-f fa-3x"></i>
-                    </a>
-                    <a href="https://twitter.com/getvrom09" target="_blank">
-                        <i class="fab fa-twitter fa-3x"></i>
-                    </a>
-                    <a href="https://www.instagram.com/getvrom09/" target="_blank">
-                        <i class="fab fa-instagram fa-3x"></i>
-                    </a>
-                    <a>
-                        <i class="fab fa-pinterest-p"></i>
-                    </a>
-                    <a>
-                        <i class="fab fa-youtube"></i>
-                    </a>
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col><a href="https://www.facebook.com/whoslaundry09" target="_blank">
+                                <i class="fab fa-facebook-f fa-3x"></i>
+                            </a></ion-col>
+                            <ion-col> <a href="https://twitter.com/getvrom09" target="_blank">
+                                <i class="fab fa-twitter fa-3x"></i>
+                            </a></ion-col>
+                            <ion-col><a href="https://www.instagram.com/getvrom09/" target="_blank">
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </a></ion-col>
+                            <ion-col><a>
+                                <i class="fab fa-pinterest-p fa-3x"></i>
+                            </a></ion-col>
+                            <ion-col><a>
+                                <i class="fab fa-youtube fa-3x"></i>
+                            </a></ion-col>
+                        </ion-row>
+                    </ion-grid>
                 </ion-col>
+
+                <!-- mobile app col -->
                 <!--ion-col class="footer__social-icons-row-wrapper__mobile-apps"-->
-                <ion-col>
+                <ion-col class="mobile-app-col">
                     <a [routerLink]="['/mobile-app']">
                         <i class="fal fa-mobile-alt"></i> Mobile apps
                     </a>
