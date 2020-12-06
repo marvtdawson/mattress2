@@ -39,7 +39,7 @@ export class HomePage {
     {
       thumbnailImg: true,
       linkPath: '/dining-rooms',
-      linkImage: 'fa fa-cog fa-2x',
+      linkImage: './assets/img/dining_rm/dining_tables-slides-0XQB-jumbo.jpg',
       linkText: 'Dining Rooms'
     },
     {

@@ -19,18 +19,20 @@
         </ion-card-header>
         <ion-card>
             <ion-card-content class="shop-by-department__row-wrapper">
-                <ion-row class="shop-by-department__row-wrapper__row">
-                    <ion-col class="shop-by-department__row-wrapper__row__cols" *ngFor="let deps of departments">
-                        <a routerLink="{{ deps.linkPath }}">
-                            <div class="shop-by-department__row-wrapper__row__cols--img">
-                                {{ deps.linkImage }}
-                            </div>
-                            <div class="shop-by-department__row-wrapper__row__cols--text">
-                                {{ deps.linkText }}
-                            </div>
-                        </a>
-                    </ion-col>
-                </ion-row>
+                <ion-grid>
+                    <ion-row class="shop-by-department__row-wrapper__row">
+                        <ion-col class="shop-by-department__row-wrapper__row__cols" *ngFor="let deps of departments">
+                            <a routerLink="{{ deps.linkPath }}">
+                                <div class="shop-by-department__row-wrapper__row__cols--img">
+                                    {{ deps.linkImage }}
+                                </div>
+                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                    {{ deps.linkText }}
+                                </div>
+                            </a>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
             </ion-card-content>
         </ion-card>
     </section>
@@ -49,7 +51,7 @@
                         <ion-col>
                             <ion-img [src]="testImg">SKU 21MAT111</ion-img>
                         </ion-col>
-                        <ion-col>
+                        <ion-col class="best-deal__para">
                             <div>
                                 <p>This week's mattress buy is the Ameri Sleep mattress. <br>
                                     On sale this week for $699. Don't wait order NOW!
@@ -97,10 +99,11 @@
             <ion-card-content>
                 <ion-grid>
                     <ion-row>
-                        <ion-col>
+                        <ion-col class="follow-us__icons">
                             <ion-grid>
                                 <ion-row>
-                                    <ion-col><a href="https://www.facebook.com/whoslaundry09" target="_blank">
+                                    <ion-col>
+                                        <a href="https://www.facebook.com/whoslaundry09" target="_blank">
                                         <i class="fab fa-facebook-f fa-3x"></i>
                                     </a></ion-col>
                                     <ion-col> <a href="https://twitter.com/getvrom09" target="_blank">
@@ -141,6 +144,7 @@
             </ion-card-content>
         </ion-card>
     </section>
+
     <section class="gallery">
         <figure class="gallery__item gallery__item--1">
             <img src="./assets/img/matts/denver_mattress_DoctorsChoiceEliteEuroTopQueen.png" alt="Gallery Image 1"
@@ -183,8 +187,8 @@
 
     </section>
 
-
     <!-- page footer -->
     <app-footer></app-footer>
 
 </ion-content>
+

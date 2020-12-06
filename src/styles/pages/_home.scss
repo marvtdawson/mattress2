@@ -9,6 +9,12 @@
   text-align: center;
   padding: 1.5rem;
   position: relative;
+
+  // 320px to 375px
+  @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
+    padding: 0.5rem;
+  }
+
 }
 
 %header-defaults {
@@ -101,6 +107,34 @@
     }*/
   }
 
+}
+
+.best-deal {
+
+
+  &__para {
+    text-align: center;
+    align-self: center;
+    //margin-top: 8rem;
+
+    & p {
+      font-size: 1.6rem;
+
+
+
+    }
+
+  }
+
+}
+
+.follow-us {
+
+
+  &__icons {
+    text-align: center;
+    align-self: center;
+  }
 }
 
 /* weekly-ad card */

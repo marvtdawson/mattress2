@@ -14,24 +14,23 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(665px, 1fr));*/
 
+
   // 576 px
   @media (min-width: $bp-medium-smallest) {
     padding: 0;
   }
 
-
-
   &__img-wrapper{
-    // height: 30rem;
+    height: 45rem;
 
     // 768px
     @media (min-width: $bp-medium) {
-      padding: 0;
+      height: 25rem;
     }
 
     // 320px to 375px
     @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
-      // height: 25rem;
+      height: 20rem;
     }
 
     &--img {
@@ -39,8 +38,8 @@
       height: 45rem;
 
       // 768px
-      @media (min-width: $bp-medium) {
-        height: 30rem;
+      @media (max-width: $bp-medium) {
+        height: 25rem;
       }
 
       // 320px to 375px
