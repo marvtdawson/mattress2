@@ -44,6 +44,20 @@
         </ion-card-header>
         <ion-card>
             <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-img [src]="testImg">SKU 21MAT111</ion-img>
+                        </ion-col>
+                        <ion-col>
+                            <div>
+                                <p>This week's mattress buy is the Ameri Sleep mattress. <br>
+                                    On sale this week for $699. Don't wait order NOW!
+                                </p>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-card-content>
         </ion-card>
@@ -58,7 +72,16 @@
         </ion-card-header>
         <ion-card>
             <ion-card-content>
-
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
+                        </ion-col>
+                        <ion-col>
+                            <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
             </ion-card-content>
         </ion-card>
     </section>
@@ -72,6 +95,34 @@
         </ion-card-header>
         <ion-card>
             <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col><a href="https://www.facebook.com/whoslaundry09" target="_blank">
+                                        <i class="fab fa-facebook-f fa-3x"></i>
+                                    </a></ion-col>
+                                    <ion-col> <a href="https://twitter.com/getvrom09" target="_blank">
+                                        <i class="fab fa-twitter fa-3x"></i>
+                                    </a></ion-col>
+                                    <ion-col><a href="https://www.instagram.com/getvrom09/" target="_blank">
+                                        <i class="fab fa-instagram fa-3x"></i>
+                                    </a></ion-col>
+                                    <ion-col><a>
+                                        <i class="fab fa-pinterest-p fa-3x"></i>
+                                    </a></ion-col>
+                                    <ion-col><a>
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                    </a></ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </ion-col>
+                        <ion-col>
+                            <ion-img [src]="socialMediaImg"></ion-img>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-card-content>
         </ion-card>

@@ -8,57 +8,68 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   pageTitle = 'Home';
-  testImg = '../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg';
+  testImg = './assets/img/matts/amerisleep_mattress-iso_as3.jpg';
+  socialMediaImg = './assets/img/site/social-icons/socialmediamarketing.jpg';
+  thumbnailImg = false;
   public departments = [
     {
+      thumbnailImg: true,
       linkPath: '/mattresses',
-      // linkImage: './assets/img/matts/beautyrest_black_mariela.jpg',
-      linkImage: this.testImg,
+      linkImage: './assets/img/matts/beautyrest_black_mariela.jpg',
       linkText: 'Mattress'
     },
     {
+      thumbnailImg: true,
       linkPath: '/bedrooms',
-      linkImage: '../../src/assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg',
+      linkImage: './assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg',
       linkText: 'Bedrooms'
     },
     {
+      thumbnailImg: true,
       linkPath: '/living-rooms',
       linkImage: './assets/img/liv_rm/Compact-apartment-Moscow.jpg',
       linkText: 'Living Rooms'
     },
     {
+      thumbnailImg: true,
       linkPath: '/kitchens',
-      linkImage: '/src/assets/img/kitch/kitchen_image_2.jpg',
+      linkImage: './assets/img/kitch/kitchen_image_2.jpg',
       linkText: 'Kitchens'
     },
     {
+      thumbnailImg: true,
       linkPath: '/dining-rooms',
       linkImage: 'fa fa-cog fa-2x',
       linkText: 'Dining Rooms'
     },
     {
+      thumbnailImg: true,
       linkPath: '/bathrooms',
-      linkImage: 'fa fa-cog fa-2x',
+      linkImage: './assets/img/bath_rm/bathroom_1.jpg',
       linkText: 'Bathrooms'
     },
     {
+      thumbnailImg: true,
       linkPath: '/lamps',
-      linkImage: 'fa fa-cog fa-2x',
+      linkImage: './assets/img/lamps/',
       linkText: 'Lamps'
     },
     {
+      thumbnailImg: true,
       linkPath: '/tables',
-      linkImage: 'fa fa-cog fa-2x',
+      linkImage: './assets/img/tables/',
       linkText: 'Tables'
     },
     {
+      thumbnailImg: true,
       linkPath: '/recliners',
-      linkImage: 'fa fa-cog fa-2x',
+      linkImage: './assets/img/recliners/',
       linkText: 'Recliners'
     },
     {
+      thumbnailImg: true,
       linkPath: '/accessories',
-      linkImage: 'fa fa-cog fa-2x',
+      linkImage: './assets/img/accessories',
       linkText: 'Accessories'
     }
   ];
