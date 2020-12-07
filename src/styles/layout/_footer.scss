@@ -103,10 +103,12 @@
 
       &__subdiv-3 {
 
-        align-content: center;
+        text-align: center;
+        align-self: center;
 
         & ion-item {
-          align-content: center;
+          text-align: center;
+          align-self: center;
         }
 
       }
@@ -269,11 +271,11 @@
 
   & .mobile-app-col {
     display: grid;
-    margin-top: 1.7rem;
+    // margin-top: 1.7rem;
     font-size: 1.6rem;
     text-align: right;
-    align-content: center;
-    right: 5rem;
+    align-self: center;
+    right: 8rem;
 
     // 320px to 375px
     @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {

@@ -11,11 +11,11 @@ export class HomePage {
   testImg = './assets/img/matts/amerisleep_mattress-iso_as3.jpg';
   socialMediaImg = './assets/img/site/social-icons/socialmediamarketing.jpg';
   thumbnailImg = false;
-  mattressImg = 'src/assets/img/matts/beautyrest_black_mariela.jpg';
-  bedroomImg = './assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg';
-  livingroomImg = './assets/img/liv_rm/Compact-apartment-Moscow.jpg';
+  mattressImg = '../../assets/img/matts/beautyrest_black_mariela.png';
+  bedroomImg = '../../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg';
+  livingroomImg = '../../assets/img/liv_rm/Compact-apartment-Moscow.jpg';
   kitchenImg = './assets/img/kitch/kitchen_image_2.jpg';
-  diningroomImg = './assets/img/dining_rm/dining_tables-slides-0XQB-jumbo.jpg';
+  diningroomImg = './assets/img/dining_rm/dining-tables-slide-0XQB-jumbo.jpg';
   bathroomImg = './assets/img/bath_rm/bathroom_1.jpg';
   lampImg = './assets/img/lamps/1-splash-mobile-Table-Lamps.jpg';
   tableImg = './assets/img/tables/tyler-creek-counter-height-dining-room-table-0.jpg';
@@ -25,19 +25,19 @@ export class HomePage {
     {
       thumbnailImg: true,
       linkPath: '/mattresses',
-      linkImage: './assets/img/matts/beautyrest_black_mariela.jpg',
+      linkImage: '../../assets/img/matts/beautyrest_black_mariela.png',
       linkText: 'Mattress'
     },
     {
       thumbnailImg: true,
       linkPath: '/bedrooms',
-      linkImage: './assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg',
+      linkImage: '../../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg',
       linkText: 'Bedrooms'
     },
     {
       thumbnailImg: true,
       linkPath: '/living-rooms',
-      linkImage: './assets/img/liv_rm/Compact-apartment-Moscow.jpg',
+      linkImage: '../../assets/img/liv_rm/Compact-apartment-Moscow.jpg',
       linkText: 'Living Rooms'
     },
     {
@@ -49,7 +49,7 @@ export class HomePage {
     {
       thumbnailImg: true,
       linkPath: '/dining-rooms',
-      linkImage: './assets/img/dining_rm/dining_tables-slides-0XQB-jumbo.jpg',
+      linkImage: './assets/img/dining_rm/dining-tables-slide-0XQB-jumbo.jpg',
       linkText: 'Dining Rooms'
     },
     {
