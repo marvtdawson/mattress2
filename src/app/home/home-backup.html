@@ -1,0 +1,328 @@
+<ion-content>
+    <ion-grid>
+        <!-- jumbotron / slider header -->
+        <ion-row class="jumbotron-header">
+            <ion-col>
+                <div class="jumbotron-header__img-wrapper">
+                    <img class="jumbotron-header__img-wrapper--img"
+                         src="./assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg" alt="Home Page Jumbotron">
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="shop-by-department">
+            <ion-grid>
+                <!--ion-grid class="shop-by-department"-->
+                <ion-row>
+                    <ion-col>
+                        <ion-card-header>
+                            <ion-card-subtitle>
+                                <div class="heading-secondary">Shop By Department</div>
+                            </ion-card-subtitle>
+                        </ion-card-header>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-content class="shop-by-department__row-wrapper">
+                                <ion-grid>
+                                    <!--ion-row class="shop-by-department__row-wrapper__row">
+                                        <ion-col class="shop-by-department__row-wrapper__row__cols" *ngFor="let deps of departments">
+                                            <a routerLink="{{ deps.linkPath }}">
+                                                <div class="shop-by-department__row-wrapper__row__cols--img">
+                                                    <ion-img [src]="mattressImg"></ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                    {{ deps.linkText }}
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                    </ion-row-->
+                                    <ion-row class="shop-by-department__row-wrapper__row">
+                                        <ion-col class="shop-by-department__row-wrapper__row__cols">
+                                            <ion-label>Mattress</ion-label>
+                                            <a routerLink="['/mattresses']">
+                                                <div>
+                                                    <ion-img class="shop-by-department__row-wrapper__row__cols--img"
+                                                             [src]="mattressImg">
+                                                    </ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-label>Bedroom</ion-label>
+                                            <a routerLink="['/bedroom']">
+                                                <div>
+                                                    <ion-img class="shop-by-department__row-wrapper__row__cols--img"
+                                                             [src]="bedroomImg">
+                                                    </ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-label>Living Room</ion-label>
+                                            <a routerLink="['/living-room']">
+                                                <div>
+                                                    <ion-img class="shop-by-department__row-wrapper__row__cols--img"
+                                                             [src]="livingroomImg">
+                                                    </ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-label>Kitchens</ion-label>
+                                            <a routerLink="['/kitchens']">
+                                                <div>
+                                                    <ion-img class="shop-by-department__row-wrapper__row__cols--img"
+                                                             [src]="kitchenImg">
+                                                    </ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-label>Dining Room</ion-label>
+                                            <a routerLink="['/mattresses']">
+                                                <div class="shop-by-department__row-wrapper__row__cols--img">
+                                                    <ion-img [src]="diningroomImg"></ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-label>Bathrooms</ion-label>
+                                            <a routerLink="['/mattresses']">
+                                                <div class="shop-by-department__row-wrapper__row__cols--img">
+                                                    <ion-img [src]="bathroomImg"></ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-label>Lamps</ion-label>
+                                            <a routerLink="['/mattresses']">
+                                                <div class="shop-by-department__row-wrapper__row__cols--img">
+                                                    <ion-img [src]="lampImg"></ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a></ion-col>
+                                        <ion-col>
+                                            <ion-label>Tables</ion-label>
+                                            <a routerLink="['/mattresses']">
+                                                <div class="shop-by-department__row-wrapper__row__cols--img">
+                                                    <ion-img [src]="tableImg"></ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-label>Recliners</ion-label>
+                                            <a routerLink="['/mattresses']">
+                                                <div>
+                                                    <ion-img class="shop-by-department__row-wrapper__row__cols--img"
+                                                             [src]="reclinerImg">
+                                                    </ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a></ion-col>
+                                        <ion-col>
+                                            <ion-label>Accessories</ion-label>
+                                            <a routerLink="['/mattresses']">
+                                                <div>
+                                                    <ion-img class="shop-by-department__row-wrapper__row__cols--img"
+                                                             [src]="accessoriesImg">
+                                                    </ion-img>
+                                                </div>
+                                                <div class="shop-by-department__row-wrapper__row__cols--text">
+                                                </div>
+                                            </a>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+                <!--/section-->
+            </ion-grid>
+        </ion-row>
+    </ion-grid>
+
+
+
+
+    <section class="best-deal">
+        <ion-card-header>
+            <ion-card-subtitle>
+                <div class="heading-secondary">Best Mattress's Buys</div>
+                <h5></h5>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-img [src]="testImg">SKU 21MAT111</ion-img>
+                        </ion-col>
+                        <ion-col class="best-deal__para">
+                            <div>
+                                <p>This week's mattress buy is the Ameri Sleep mattress. <br>
+                                    On sale this week for $699. Don't wait order NOW!
+                                </p>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+            </ion-card-content>
+        </ion-card>
+    </section>
+
+    <section class="subscribe">
+        <ion-card-header>
+            <ion-card-subtitle>
+                <div class="heading-secondary">Subscribe</div>
+                <h5>Find out what's on sale with our weekly newsletter.</h5>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
+                        </ion-col>
+                        <ion-col>
+                            <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+    </section>
+
+    <section class="follow-us">
+        <ion-card-header>
+            <ion-card-subtitle>
+                <div class="heading-secondary">Stay Connected</div>
+                <h5>Follow Us On All Social Platforms.</h5>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col class="follow-us__icons">
+                            <ion-label>Join Now!</ion-label>
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col>
+                                        <a href="https://www.facebook.com/whoslaundry09" target="_blank">
+                                            <i class="fab fa-facebook-f fa-3x"></i>
+                                        </a></ion-col>
+                                    <ion-col><a href="https://twitter.com/getvrom09" target="_blank">
+                                        <i class="fab fa-twitter fa-3x"></i>
+                                    </a></ion-col>
+                                    <ion-col><a href="https://www.instagram.com/getvrom09/" target="_blank">
+                                        <i class="fab fa-instagram fa-3x"></i>
+                                    </a></ion-col>
+                                    <ion-col><a>
+                                        <i class="fab fa-pinterest-p fa-3x"></i>
+                                    </a></ion-col>
+                                    <ion-col><a>
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                    </a></ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </ion-col>
+                        <ion-col>
+                            <ion-img [src]="socialMediaImg"></ion-img>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+            </ion-card-content>
+        </ion-card>
+    </section>
+
+    <section class="weekly-ad">
+        <ion-card-header>
+            <ion-card-subtitle>
+                <div class="heading-secondary">Weekly Ad</div>
+                <h5>We've got deals too!</h5>
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card>
+            <ion-card-content>
+
+            </ion-card-content>
+        </ion-card>
+    </section>
+
+    <section class="gallery">
+        <figure class="gallery__item gallery__item--1">
+            <img src="./assets/img/matts/denver_mattress_DoctorsChoiceEliteEuroTopQueen.png" alt="Gallery Image 1"
+                 class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+            <img src="./assets/img/matts/simmons_beautyrest_reharge_briana_l.jpg" alt="Gallery Image 2"
+                 class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+            <img src="./assets/img/matts/bedinbox_serenity2-lrg.jpg" alt="Gallery Image 3"
+                 class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+            <img src="./assets/img/matts/tempurpedic_1.jpg" alt="Gallery Image 4"
+                 class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+            <img src="./assets/img/accessories/970cce423ed475528e44602f9f766d6a.jpg" alt="Gallery Image 5"
+                 class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--6"><img
+                src="./assets/img/recliners/lansing-tufted-leather-recliner-with-nailheads-o.jpg" alt="Gallery Image 6"
+                class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--7"><img
+                src="./assets/img/liv_rm/Black-Furniture-Living-Room-Ideas-Indoor.jpg" alt="Gallery Image 7"
+                class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--8"><img
+                src="./assets/img/bed_rm/cortinella-Cream-5-Pc-Queen-Poster-Bedroom.jpg" alt="Gallery Image 8"
+                class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--9"><img src="./assets/img/lamps/1-splash-mobile-Table-Lamps.jpg"
+                                                            alt="Gallery Image 9"
+                                                            class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--10"><img
+                src="./assets/img/tables/grindleburg-dining-room-table-0.jpg" alt="Gallery Image 10"
+                class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--11"><img src="./assets/img/liv_rm/sectional-1.jpg"
+                                                             alt="Gallery Image 11"
+                                                             class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--12"><img src="./assets/img/kitch/kitchen_image_3.jpg"
+                                                             alt="Gallery Image 12"
+                                                             class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--13">
+            <img src="./assets/img/accessories/eb079052b1972b81297106d1c55c573e.jpg" alt="Gallery Image 13"
+                 class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--14"><img src="./assets/img/bath_rm/bathroom_4.jpg"
+                                                             alt="Gallery Image 14"
+                                                             class="gallery__img"></figure>
+
+    </section>
+
+    <!-- page footer -->
+    <app-footer></app-footer>
+
+</ion-content>
