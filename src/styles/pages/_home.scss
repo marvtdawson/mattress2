@@ -298,9 +298,18 @@
   /* follow us  */
   &__follow-us {
 
-    &__icons {
+    &__title {
       text-align: center;
-      align-self: center;
+    }
+
+    &__content {
+
+
+      &__icons {
+        justify-content: center;
+        align-self: center;
+      }
+
     }
   }
 

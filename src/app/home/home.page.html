@@ -142,49 +142,61 @@
 
         <!-- follow us -->
         <ion-row class="home__follow-us">
-            <section>
-                <ion-card-header>
-                    <ion-card-subtitle>
-                        <div class="heading-secondary">Stay Connected</div>
-                        <h5>Follow Us On All Social Platforms.</h5>
-                    </ion-card-subtitle>
-                </ion-card-header>
-                <ion-card>
-                    <ion-card-content>
-                        <ion-grid>
-                            <ion-row>
-                                <ion-col class="follow-us__icons">
-                                    <ion-label>Join Now!</ion-label>
+            <ion-col>
+                <ion-grid>
+                    <ion-row class="home__follow-us__title">
+                        <ion-col>
+                            <ion-card-header>
+                                <ion-card-subtitle>
+                                    <div class="heading-secondary">Stay Connected</div>
+                                    <h5>Follow Us On All Social Media Platforms.</h5>
+                                </ion-card-subtitle>
+                            </ion-card-header>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row class="home__follow-us__content">
+                        <ion-col>
+                            <ion-card>
+                                <ion-card-content>
                                     <ion-grid>
                                         <ion-row>
                                             <ion-col>
-                                                <a href="https://www.facebook.com/whoslaundry09" target="_blank">
-                                                    <i class="fab fa-facebook-f fa-3x"></i>
-                                                </a></ion-col>
-                                            <ion-col><a href="https://twitter.com/getvrom09" target="_blank">
-                                                <i class="fab fa-twitter fa-3x"></i>
-                                            </a></ion-col>
-                                            <ion-col><a href="https://www.instagram.com/getvrom09/" target="_blank">
-                                                <i class="fab fa-instagram fa-3x"></i>
-                                            </a></ion-col>
-                                            <ion-col><a>
-                                                <i class="fab fa-pinterest-p fa-3x"></i>
-                                            </a></ion-col>
-                                            <ion-col><a>
-                                                <i class="fab fa-youtube fa-3x"></i>
-                                            </a></ion-col>
+                                                <ion-label>Join Now!</ion-label>
+                                                <ion-grid>
+                                                    <ion-row class="follow-us__content__icons">
+                                                        <ion-col>
+                                                            <a href="https://www.facebook.com/mattressandthings" target="_blank">
+                                                                <i class="fab fa-facebook-f fa-3x"></i>
+                                                            </a></ion-col>
+                                                        <ion-col><a href="https://twitter.com/mattressandthings" target="_blank">
+                                                            <i class="fab fa-twitter fa-3x"></i>
+                                                        </a></ion-col>
+                                                        <ion-col>
+                                                            <a href="https://www.instagram.com/mattressandthings" target="_blank">
+                                                            <i class="fab fa-instagram fa-3x"></i>
+                                                        </a></ion-col>
+                                                        <ion-col>
+                                                            <a href="https://www.pinterest.com/mattressandthings">
+                                                            <i class="fab fa-pinterest-p fa-3x"></i>
+                                                        </a></ion-col>
+                                                        <ion-col>
+                                                            <a href="https://www.youtube.com/mattressandthings">
+                                                            <i class="fab fa-youtube fa-3x"></i>
+                                                        </a></ion-col>
+                                                    </ion-row>
+                                                </ion-grid>
+                                            </ion-col>
+                                            <ion-col>
+                                                <ion-img [src]="socialMediaImg"></ion-img>
+                                            </ion-col>
                                         </ion-row>
                                     </ion-grid>
-                                </ion-col>
-                                <ion-col>
-                                    <ion-img [src]="socialMediaImg"></ion-img>
-                                </ion-col>
-                            </ion-row>
-                        </ion-grid>
-
-                    </ion-card-content>
-                </ion-card>
-            </section>
+                                </ion-card-content>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
         </ion-row>
 
         <!-- weekly ad -->
