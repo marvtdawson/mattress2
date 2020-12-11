@@ -3,13 +3,14 @@
 
 <ion-content>
     <ion-grid class="home">
+
         <!-- jumbotron / slider header -->
         <ion-row class="home__jumbotron">
             <ion-col>
-                <div class="home__jumbotron__img-wrapper">
+                <!--div class="home__jumbotron__img-wrapper"-->
                     <img class="home__jumbotron__img-wrapper--img"
                          src="./assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg" alt="Home Page Jumbotron">
-                </div>
+                <!--/div-->
             </ion-col>
         </ion-row>
 
@@ -28,148 +29,38 @@
                     </ion-row>
 
                     <ion-row class="home__shop-by-department__col--content">
-                            <ion-card>
-                                <ion-card-content>
-                                    <ion-col>
-                                        <ion-grid>
-                                            <!--ion-row class="shop-by-department__row-wrapper__row">
-                                                <ion-col class="shop-by-department__row-wrapper__row__cols" *ngFor="let deps of departments">
-                                                    <a routerLink="{{ deps.linkPath }}">
-                                                        <div class="shop-by-department__row-wrapper__row__cols--img">
-                                                            <ion-img [src]="mattressImg"></ion-img>
-                                                        </div>
-                                                        <div class="shop-by-department__row-wrapper__row__cols--text">
-                                                            {{ deps.linkText }}
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                            </ion-row-->
-                                            <ion-row class="home__shop-by-department__col--content__row">
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Mattress</ion-label>
-                                                    <a routerLink="['/mattresses']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="mattressImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Bedroom</ion-label>
-                                                    <a routerLink="['/bedrooms']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="bedroomImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Living Rooms</ion-label>
-                                                    <a routerLink="['/living-rooms']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="livingroomImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Kitchens</ion-label>
-                                                    <a routerLink="['/kitchens']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="kitchenImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Dining Rooms</ion-label>
-                                                    <a routerLink="['/dining-rooms']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="diningroomImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>BathRooms</ion-label>
-                                                    <a routerLink="['/bathrooms']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="bathroomImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Lamps</ion-label>
-                                                    <a routerLink="['/lamps']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="lampImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Tables</ion-label>
-                                                    <a routerLink="['/tables']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="tableImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Recliners</ion-label>
-                                                    <a routerLink="['/recliners']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="reclinerImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                                <ion-col class="home__shop-by-department__col--content__row__cols">
-                                                    <ion-label>Accessories</ion-label>
-                                                    <a routerLink="['/accessories']">
-                                                        <div class="home__shop-by-department__col--content__row__cols--img">
-                                                            <ion-img class="home__shop-by-department--col__content__row__cols--img__size"
-                                                                     [src]="accessoriesImg">
-                                                            </ion-img>
-                                                        </div>
-                                                        <div class="home__shop-by-department__col--content__row__cols--text">
-                                                        </div>
-                                                    </a>
-                                                </ion-col>
-                                            </ion-row>
-                                        </ion-grid>
-                                    </ion-col>
-                                </ion-card-content>
-                            </ion-card>
+                        <ion-card>
+                            <ion-card-content>
+                                <ion-col>
+                                    <ion-grid>
+                                        <ion-row class="home__shop-by-department__col--content__row">
+                                            <ion-col class="home__shop-by-department__col--content__row__cols"
+                                                     *ngFor="let deps of departments">
+                                                <a routerLink="{{ deps.linkPath }}">
+                                                    <grid-ion>
+                                                        <ion-row>
+                                                            <ion-col>
+                                                                <div class="home__shop-by-department__col--content__row__cols__img">
+                                                                    <img class="home__shop-by-department--col__content__row__cols__img__size"
+                                                                         src="{{ deps.linkImage }}">
+                                                                </div>
+                                                            </ion-col>
+                                                        </ion-row>
+                                                        <ion-row>
+                                                            <ion-col>
+                                                                <div class="home__shop-by-department__col--content__row__cols__text">
+                                                                    {{ deps.linkText }}
+                                                                </div>
+                                                            </ion-col>
+                                                        </ion-row>
+                                                    </grid-ion>
+                                                </a>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-grid>
+                                </ion-col>
+                            </ion-card-content>
+                        </ion-card>
                     </ion-row>
                 </ion-grid>
             </ion-col>
@@ -200,9 +91,9 @@
                                                 <ion-img [src]="testImg">SKU 21MAT111</ion-img>
                                             </ion-col>
                                             <ion-col class="home__best-deal__col__content__col__row--text">
-                                                    <p>This week's mattress buy is the Ameri Sleep mattress. <br>
-                                                        On sale this week for $699. Don't wait order NOW!
-                                                    </p>
+                                                <p>This week's mattress buy is the Ameri Sleep mattress. <br>
+                                                    On sale this week for $699. Don't wait order NOW!
+                                                </p>
                                             </ion-col>
                                         </ion-row>
                                     </ion-grid>
@@ -216,33 +107,42 @@
 
         <!-- subscribe -->
         <ion-row class="home__subscribe">
-            <section>
-                <ion-card-header>
-                    <ion-card-subtitle>
-                        <div class="heading-secondary">Subscribe</div>
-                        <h5>Find out what's on sale with our weekly newsletter.</h5>
-                    </ion-card-subtitle>
-                </ion-card-header>
-                <ion-card>
-                    <ion-card-content>
-                        <ion-grid>
-                            <ion-row>
-                                <ion-col>
-                                    <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
-                                </ion-col>
-                                <ion-col>
-                                    <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
-                                </ion-col>
-                            </ion-row>
-                        </ion-grid>
-                    </ion-card-content>
-                </ion-card>
-            </section>
+            <ion-col>
+                <ion-grid>
+                    <ion-row class="home__subscribe__title">
+                        <ion-col>
+                            <ion-card-header>
+                                <ion-card-subtitle>
+                                    <div class="heading-secondary">Subscribe</div>
+                                    <h5>Saved by receiving our weekly newsletter.</h5>
+                                </ion-card-subtitle>
+                            </ion-card-header>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="home__subscribe__content">
+                        <ion-card class="home__subscribe__content__card">
+                            <ion-card-content>
+                                <ion-grid>
+                                    <ion-row class="home__subscribe_content__card">
+                                        <ion-col>
+                                            <ion-input type="text" placeholder="Save 10% off* your first order"></ion-input>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
         </ion-row>
 
         <!-- follow us -->
         <ion-row class="home__follow-us">
-            <section >
+            <section>
                 <ion-card-header>
                     <ion-card-subtitle>
                         <div class="heading-secondary">Stay Connected</div>
@@ -289,7 +189,7 @@
 
         <!-- weekly ad -->
         <ion-row class="home__weekly-ad">
-            <section >
+            <ion-col>
                 <ion-card-header>
                     <ion-card-subtitle>
                         <div class="heading-secondary">Weekly Ad</div>
@@ -301,14 +201,15 @@
 
                     </ion-card-content>
                 </ion-card>
-            </section>
+            </ion-col>
         </ion-row>
 
         <!-- gallery -->
         <ion-row class="home__gallery">
             <section class="gallery">
                 <figure class="gallery__item gallery__item--1">
-                    <img src="./assets/img/matts/denver_mattress_DoctorsChoiceEliteEuroTopQueen.png" alt="Gallery Image 1"
+                    <img src="./assets/img/matts/denver_mattress_DoctorsChoiceEliteEuroTopQueen.png"
+                         alt="Gallery Image 1"
                          class="gallery__img">
                 </figure>
                 <figure class="gallery__item gallery__item--2">
@@ -327,7 +228,8 @@
                     <img src="./assets/img/accessories/970cce423ed475528e44602f9f766d6a.jpg" alt="Gallery Image 5"
                          class="gallery__img"></figure>
                 <figure class="gallery__item gallery__item--6"><img
-                        src="./assets/img/recliners/lansing-tufted-leather-recliner-with-nailheads-o.jpg" alt="Gallery Image 6"
+                        src="./assets/img/recliners/lansing-tufted-leather-recliner-with-nailheads-o.jpg"
+                        alt="Gallery Image 6"
                         class="gallery__img"></figure>
                 <figure class="gallery__item gallery__item--7"><img
                         src="./assets/img/liv_rm/Black-Furniture-Living-Room-Ideas-Indoor.jpg" alt="Gallery Image 7"
@@ -335,9 +237,10 @@
                 <figure class="gallery__item gallery__item--8"><img
                         src="./assets/img/bed_rm/cortinella-Cream-5-Pc-Queen-Poster-Bedroom.jpg" alt="Gallery Image 8"
                         class="gallery__img"></figure>
-                <figure class="gallery__item gallery__item--9"><img src="./assets/img/lamps/1-splash-mobile-Table-Lamps.jpg"
-                                                                    alt="Gallery Image 9"
-                                                                    class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--9"><img
+                        src="./assets/img/lamps/1-splash-mobile-Table-Lamps.jpg"
+                        alt="Gallery Image 9"
+                        class="gallery__img"></figure>
                 <figure class="gallery__item gallery__item--10"><img
                         src="./assets/img/tables/grindleburg-dining-room-table-0.jpg" alt="Gallery Image 10"
                         class="gallery__img"></figure>
@@ -356,6 +259,7 @@
 
             </section>
         </ion-row>
+
 
     </ion-grid>
 

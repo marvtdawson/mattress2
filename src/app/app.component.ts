@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import {AlertController, ModalController, Platform} from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+import {Capacitor, Plugins, Permissions} from '@capacitor/core';
+const { Device } = Plugins;
+const { Storage } = Plugins;
 
 @Component({
   selector: 'app-root',
@@ -10,6 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  public isPermitted = false;
   public appPages = [
     {
       title: 'Home',
@@ -25,15 +30,65 @@ export class AppComponent {
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private alertCtrl: AlertController,
+    private modal: ModalController
   ) {
     this.initializeApp();
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      if (Capacitor.isPluginAvailable('SplashScreen')) {
+        Plugins.SplashScreen.hide().then().catch(error => console.error(error));
+      }
+      if (Capacitor.isPluginAvailable('Device')) {
+        Plugins.Device.getInfo().then().catch(error => console.error(error));
+        const deviceInfo = Device.getInfo();
+        console.log(deviceInfo);
+      }
+      const permissions = Permissions.requestPermissions();
+      if (Capacitor.isPluginAvailable('PermissionRequestedEvent')) {
+        Plugins.Permissions.requestPermissions().then().catch();
+      }
+      this.checkPermission();
     });
   }
+
+  async checkPermission() {
+    const getPermissions = await Storage.get({key : 'currentPermissions'});
+    console.log('My permissions: ' + getPermissions);
+    if (!getPermissions) {
+      const alert = await this.alertCtrl.create({
+        header: 'Permissions...',
+        // subHeader: 'Allow the Following',
+        message: 'Mattress and Things would like ' +
+            'to access the camera, microphone, photo, ' +
+            'storage, location and set notifications on this device',
+        buttons: [
+          {
+            text: 'Ok',
+            handler: () => {
+              this.setPermissions();
+            }
+          },
+          {
+            text: 'Maybe Later',
+            role: 'cancel',
+            handler: () => {
+              this.setTempPermissions();
+            }
+          }
+        ]
+      });
+      await alert.present();
+    }
+  }
+
+  async setPermissions() {
+    this.isPermitted = true;
+    // const settingPermissions = Storage.set({key : currentPermissions, value: JSON.stringify(value) });
+  }
+
+  async setTempPermissions() { }
 }
