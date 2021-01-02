@@ -87,6 +87,10 @@ const routes: Routes = [
   {
     path: 'mattresses',
     loadChildren: () => import('./products/mattresses/mattresses.module').then(m => m.MattressesPageModule)
+  },
+  {
+    path: 'slideshow',
+    loadChildren: () => import('./slideshow/slideshow.module').then( m => m.SlideshowPageModule)
   }
 ];
 
