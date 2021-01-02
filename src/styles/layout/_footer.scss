@@ -143,11 +143,12 @@
       // text-align: center;
 
       & a:visited, a:active {
-        color: #bebebe;
+        color: $link-visited-primary;
       }
 
       & a:hover {
-        color: #bebebe;
+        color: $link-visited-secondary;
+        text-decoration: none;
       }
 
       @media only screen and (min-width: $bp-medium-small) and (max-width: $bp-medium-larger) {
@@ -194,11 +195,11 @@
       text-align: right;
 
       & a:visited, a:active {
-        color: #bebebe;
+        color: $link-visited-secondary;
       }
 
       & a:hover {
-        color: #bebebe;
+        color: $link-visited-primary;
       }
 
       @media only screen and (min-width: $bp-medium-small) and (max-width: $bp-medium-larger) {

@@ -91,7 +91,16 @@ const routes: Routes = [
   {
     path: 'slideshow',
     loadChildren: () => import('./slideshow/slideshow.module').then( m => m.SlideshowPageModule)
-  }
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
+  },
+
 ];
 
 @NgModule({
