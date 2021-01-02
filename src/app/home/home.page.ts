@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Meta, Title} from '@angular/platform-browser';
+import {SiteDataService} from '../../providers/site-data/site-data.service';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +10,7 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   pageTitle = 'Home';
+  pageDescription = 'Welcome to the home of MattressandThings.com';
   testImg = './assets/img/matts/amerisleep_mattress-iso_as3.jpg';
   socialMediaImg = './assets/img/site/social-icons/socialmediamarketing.jpg';
   thumbnailImg = false;
@@ -83,6 +86,19 @@ export class HomePage {
       linkText: 'Accessories'
     }
   ];
-  constructor() {}
+
+
+  constructor(private titleService: Title,
+              private metaData: Meta,
+              public siteData: SiteDataService) {
+    this.titleService.setTitle(this.pageTitle);
+    // set page meta data
+    this.metaData.addTags([
+      {name: 'description', content: this.pageDescription},
+      {name: 'keywords', content: this.siteData.siteKeywords},
+      {name: 'author', content: this.siteData.siteFooterName},
+      {name: 'robots', content: 'index, follow'}
+    ]);
+  }
 
 }
