@@ -9,6 +9,7 @@ import {SiteDataService} from '../../providers/site-data/site-data.service';
 })
 export class HomePage {
 
+  pageId = 3265;
   pageTitle = 'Home';
   pageDescription = 'Welcome to the home of MattressandThings.com';
   testImg = './assets/img/matts/amerisleep_mattress-iso_as3.jpg';
