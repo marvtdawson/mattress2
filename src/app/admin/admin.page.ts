@@ -1,4 +1,4 @@
-import {Component, NgModule, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {SiteDataService} from '../../providers/site-data/site-data.service';
 
 @Component({
@@ -9,60 +9,62 @@ import {SiteDataService} from '../../providers/site-data/site-data.service';
 
 export class AdminPage implements OnInit {
 
+    pageTitle = '';
+    defaultImage = '';
     siteLogo = this.siteData.siteLogo;
 
     public adminSideNav = [
         {
             userRole : 'SU',
-            linkPath: '/admin/manager/products',
+            linkPath: '/admin/manage/products',
             icon: 'fas fa-cash-register fa-2x',
             linkText: 'Manage Products'
         },
         {
             'user-role': 'SU',
-            linkPath: '/admin/manager/content',
+            linkPath: '/admin/manage/content',
             icon: 'fas fa-pencil-alt fa-2x',
             linkText: 'Manage Pages'
         },
         {
             'user-role': 'SU',
-            linkPath: '/admin/manager/departments',
+            linkPath: '/admin/manage/departments',
             icon: 'fas fa-store fa-2x',
             linkText: 'Manage Departments'
         },
         {
             userRole: 'SU',
-            linkPath: '/admin/manager/weekly-ads',
+            linkPath: '/admin/manage/weekly-ads',
             icon: 'fas fa-ad fa-2x',
             linkText: 'Manage Weekly Ads'
         },
         {
             userRole : 'SU',
-            linkPath: '/admin/manager/wish-lists',
+            linkPath: '/admin/manage/wish-lists',
             icon: 'fas fa-star-shooting fa-2x',
             linkText: 'Manage Wish List'
         },
         {
             userRole: 'SU',
-            linkPath: '/admin/manager/requests',
+            linkPath: '/admin/manage/requests',
             icon: 'fad fa-truck fa-2x',
             linkText: 'Manage Delivery Requests'
         },
         {
             userRole : 'SU',
-            linkPath: '/admin/manager/social-media-accounts',
+            linkPath: '/admin/manage/social-media-accounts',
             icon: 'fas fa-hashtag fa-2x',
             linkText: 'Manage Social Media'
         },
         {
             userRole : 'SU',
-            linkPath: '/admin/manager/manage-employees',
+            linkPath: '/admin/manage/manage-employees',
             icon: 'fas fa-users fa-2x',
             linkText: 'Manage Employees'
         },
         {
             userRole : 'SU',
-            linkPath: '/admin/manager/payment-options',
+            linkPath: '/admin/manage/payment-options',
             icon: 'fas fa-credit-card fa-2x',
             linkText: 'Manage Payment Options'
         },
