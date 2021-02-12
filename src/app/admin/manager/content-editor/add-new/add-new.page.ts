@@ -14,4 +14,8 @@ export class AddNewPage implements OnInit {
   ngOnInit() {
   }
 
+  onCreateNewPage() {
+
+  }
+
 }
