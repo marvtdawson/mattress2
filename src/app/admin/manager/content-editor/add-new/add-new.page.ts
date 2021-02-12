@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddNewPage implements OnInit {
 
+  pageTitle = 'Add New Page';
+
   constructor() { }
 
   ngOnInit() {
