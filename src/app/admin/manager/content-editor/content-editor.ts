@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentEditorPage implements OnInit {
 
+    pageTitle = 'Page Manager';
+
     constructor() { }
 
     ngOnInit() {
     }
+
+    onAddNewPage() {}
+
+    onEditPage(){}
+
+    onRemovePage(){}
 
 }

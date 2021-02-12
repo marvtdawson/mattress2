@@ -14,13 +14,13 @@ export class AdminPage implements OnInit {
     public adminSideNav = [
         {
             userRole : 'SU',
-            linkPath: '/admin/manager/add-product',
+            linkPath: '/admin/manager/products',
             icon: 'fas fa-cash-register fa-2x',
             linkText: 'Manage Products'
         },
         {
             'user-role': 'SU',
-            linkPath: '/admin/manager/content-editor',
+            linkPath: '/admin/manager/content',
             icon: 'fas fa-pencil-alt fa-2x',
             linkText: 'Manage Pages'
         },

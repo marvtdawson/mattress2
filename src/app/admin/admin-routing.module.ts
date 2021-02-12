@@ -15,6 +15,7 @@ import {DeletePage} from './manager/content-editor/delete/delete.page';
 import {EditPage} from './manager/content-editor/edit/edit.page';
 import {ContentEditorPage} from './manager/content-editor/content-editor';
 import {ProductsPage} from '../products/products.page';
+import {ManagerPageModule} from './manager/manager.module';
 
 const adminChildRoutes: Routes = [
     { path: 'admin', component: AdminPage,
@@ -22,7 +23,7 @@ const adminChildRoutes: Routes = [
             {
                path: 'manager', component: ManagerPage,
                 children: [
-                    { path: 'content-editor', component: ContentEditorPage,
+                    { path: 'content', component: ContentEditorPage,
                         children: [
                             { path: 'add', component: AddNewPage },
                             { path: 'edit', component: EditPage },
@@ -53,7 +54,8 @@ const adminChildRoutes: Routes = [
         CommonModule,
         RouterModule.forChild(adminChildRoutes),
         IonicModule,
-        LayoutModule
+        LayoutModule,
+        ManagerPageModule
     ],
     exports: [
         RouterModule,

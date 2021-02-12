@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>add-new</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ pageTitle  }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row class="add-edit-minus">
+          <ion-col>
+            <a (click)="onAddNewPage()">
+              <i class="fas fa-user-plus fa-5x" title="Add Page"></i>
+            </a>
+          </ion-col>
+          <ion-col>
+            <a (click)="onEditPage()">
+              <i class="fad fa-user-cog fa-5x" title="Edit Page"></i>
+            </a>
+          </ion-col>
+          <ion-col>
+            <a (click)="onRemovePage()">
+              <i class="fas fa-user-minus fa-5x" title="Remove Page"></i>
+            </a>
+          </ion-col>
+        </ion-row>
+        <ion-row class="admin-user__content__row-2">
+          <ion-col class="admin-user__content__row-2__column">
+            <ion-router-outlet></ion-router-outlet>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
