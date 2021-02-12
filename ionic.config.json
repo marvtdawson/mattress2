@@ -4,5 +4,6 @@
     "capacitor": {}
   },
   "type": "angular",
-  "pro_id": "ba725c90"
+  "pro_id": "ba725c90",
+  "defaultBrowser": "firefox"
 }

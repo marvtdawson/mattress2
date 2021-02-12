@@ -20,7 +20,7 @@ export class AdminPage implements OnInit {
         },
         {
             'user-role': 'SU',
-            linkPath: '/admin/manager/pages',
+            linkPath: '/admin/manager/content-editor',
             icon: 'fas fa-pencil-alt fa-2x',
             linkText: 'Manage Pages'
         },

@@ -22,7 +22,7 @@ export class AboutPage implements OnInit {
       {name: 'description', content: this.pageDescription},
       {name: 'keywords', content: this.siteData.siteKeywords},
       {name: 'author', content: this.siteData.siteFooterName}
-    ])
+    ]);
   }
 
   ngOnInit() {

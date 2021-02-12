@@ -10,6 +10,11 @@ import {AdminPage} from './admin.page';
 import {AddProductPage} from './manager/products/add-product/add-product.page';
 import {PrivacyPolicyPage} from './customers/privacy-policy/privacy-policy.page';
 import {WishListPage} from './customers/wish-list/wish-list/wish-list.page';
+import {AddNewPage} from './manager/content-editor/add-new/add-new.page';
+import {DeletePage} from './manager/content-editor/delete/delete.page';
+import {EditPage} from './manager/content-editor/edit/edit.page';
+import {ContentEditorPage} from './manager/content-editor/content-editor';
+import {ProductsPage} from '../products/products.page';
 
 const adminChildRoutes: Routes = [
     { path: 'admin', component: AdminPage,
@@ -17,7 +22,18 @@ const adminChildRoutes: Routes = [
             {
                path: 'manager', component: ManagerPage,
                 children: [
-                    { path: 'add-product', component: AddProductPage}
+                    { path: 'content-editor', component: ContentEditorPage,
+                        children: [
+                            { path: 'add', component: AddNewPage },
+                            { path: 'edit', component: EditPage },
+                            { path: 'delete', component: DeletePage }
+                        ]
+                    },
+                    { path: 'products', component: ProductsPage,
+                        children: [
+                            { path: 'add', component: AddProductPage }
+                        ]
+                    }
                 ]
             },
             { path: 'customers',  component: CustomersPage,

@@ -7,6 +7,18 @@ const routes: Routes = [
   {
     path: '',
     component: ManagerPage
+  },
+  {
+    path: 'add-new',
+    loadChildren: () => import('./content-editor/add-new/add-new.module').then(m => m.AddNewPageModule)
+  },
+  {
+    path: 'edit',
+    loadChildren: () => import('./content-editor/edit/edit.module').then(m => m.EditPageModule)
+  },
+  {
+    path: 'delete',
+    loadChildren: () => import('./content-editor/delete/delete.module').then(m => m.DeletePageModule)
   }
 ];
 
