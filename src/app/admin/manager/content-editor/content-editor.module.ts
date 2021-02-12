@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ContentEditorRoutingModule} from './content-editor-routing.module';
-import { ContentEditorPage } from './content-editor.page';
+import { ContentEditorPageRoutingModule} from './content-editor-routing.module';
+import { ContentEditorPage } from './content-editor';
 import {LayoutModule} from '../../../layout/layout.module';
 
 @NgModule({
@@ -13,9 +13,9 @@ import {LayoutModule} from '../../../layout/layout.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ContentEditorRoutingModule,
+    ContentEditorPageRoutingModule,
     LayoutModule
   ],
   declarations: [ContentEditorPage]
 })
-export class ContentEditorModule {}
+export class ContentEditorPageModule {}
