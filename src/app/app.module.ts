@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {LayoutModule} from './layout/layout.module';
 import {AdminRoutingModule} from './admin/admin-routing.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +22,8 @@ import {AdminRoutingModule} from './admin/admin-routing.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     LayoutModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     StatusBar,
