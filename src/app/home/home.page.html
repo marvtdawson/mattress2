@@ -42,7 +42,7 @@
                                                             <ion-col>
                                                                 <div class="home__shop-by-department__col--content__row__cols__img">
                                                                     <img class="home__shop-by-department--col__content__row__cols__img__size"
-                                                                         src="{{ deps.linkImage }}">
+                                                                         src="{{ deps.linkImage }}" alt="{{ deps.linkText }}">
                                                                 </div>
                                                             </ion-col>
                                                         </ion-row>
@@ -69,8 +69,8 @@
         <!-- best deal -->
         <ion-row class="home__best-deal">
             <ion-col class="home__best-deal__col">
-                <ion-img [src]="testImg">SKU 21MAT111</ion-img>
-                <!--ion-grid>
+                <ion-grid>
+                    <!-- title row -->
                     <ion-row class="home__best-deal__col--title">
                         <ion-col>
                             <ion-card-header>
@@ -81,31 +81,29 @@
                             </ion-card-header>
                         </ion-col>
                     </ion-row>
-
+                    <!-- content row -->
                     <ion-row class="home__best-deal__col__content">
-                        <ion-col class="home__best-deal__col__content__col">
-
-                            <ion-card>
-                                <ion-card-content>
-                                    <ion-grid>
-                                        <ion-row class="home__best-deal__col__content__col__row">
-                                            <ion-col class="home__best-deal__col__content__col__row--img">
-
-                                            </ion-col>
-                                            <ion-col class="home__best-deal__col__content__col__row--text">
-
-                                            </ion-col>
-                                        </ion-row>
-                                    </ion-grid>
-                                </ion-card-content>
-                            </ion-card-->
+                        <ion-col class="home__best-deal__col__content__col__row--img">
+                            <ion-img [src]="testImg">SKU 21MAT111</ion-img>
                         </ion-col>
-                        <ion-col>
+                        <ion-col class="home__best-deal__col__content__col__row--text">
                             <p>This week's mattress buy is the Ameri Sleep mattress. <br>
                                 On sale this week for $699. Don't wait order NOW!
                             </p>
                         </ion-col>
                     </ion-row>
+                        <!--ion-col class="home__best-deal__col__content__col">
+                            <ion-card>
+                                <ion-card-content>
+                                    <ion-grid>
+                                        <ion-row class="home__best-deal__col__content__col__row">
+
+                                        </ion-row>
+                                    </ion-grid>
+                                </ion-card-content>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row-->
                 </ion-grid>
             </ion-col>
         </ion-row>

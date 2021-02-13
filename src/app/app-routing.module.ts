@@ -58,51 +58,51 @@ const routes: Routes = [
     },
     {
         path: 'customer-service',
-        loadChildren: () => import('./customer-service/customer-service.module').then( m => m.CustomerServicePageModule)
+        loadChildren: () => import('./customer-service/customer-service.module').then(m => m.CustomerServicePageModule)
     },
-  {
-    path: 'delivery',
-    loadChildren: () => import('./customer-service/delivery/delivery.module').then(m => m.DeliveryPageModule)
-  },
-  {
-    path: 'faq',
-    loadChildren: () => import('./customer-service/faq/faq.module').then(m => m.FaqPageModule)
-  },
-  {
-    path: 'returns',
-    loadChildren: () => import('./customer-service/returns/returns.module').then(m => m.ReturnsPageModule)
-  },
-  {
-    path: 'price',
-    loadChildren: () => import('./customer-service/price/price.module').then(m => m.PricePageModule)
-  },
-  {
-    path: 'warranty',
-    loadChildren: () => import('./customer-service/warranty/warranty.module').then(m => m.WarrantyPageModule)
-  },
-  {
-    path: 'legal',
-    loadChildren: () => import('./legal/legal.module').then( m => m.LegalPageModule)
-  },
-  {
-    path: 'mattresses',
-    loadChildren: () => import('./products/mattresses/mattresses.module').then(m => m.MattressesPageModule)
-  },
-  {
-    path: 'slideshow',
-    loadChildren: () => import('./slideshow/slideshow.module').then( m => m.SlideshowPageModule)
-  },
-  {
-    path: 'cart',
-    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
-  },
-  {
-    path: 'no-page-found',
-    loadChildren: () => import('./page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
-  },
+    {
+        path: 'delivery',
+        loadChildren: () => import('./customer-service/delivery/delivery.module').then(m => m.DeliveryPageModule)
+    },
+    {
+        path: 'faq',
+        loadChildren: () => import('./customer-service/faq/faq.module').then(m => m.FaqPageModule)
+    },
+    {
+        path: 'returns',
+        loadChildren: () => import('./customer-service/returns/returns.module').then(m => m.ReturnsPageModule)
+    },
+    {
+        path: 'price',
+        loadChildren: () => import('./customer-service/price/price.module').then(m => m.PricePageModule)
+    },
+    {
+        path: 'warranty',
+        loadChildren: () => import('./customer-service/warranty/warranty.module').then(m => m.WarrantyPageModule)
+    },
+    {
+        path: 'legal',
+        loadChildren: () => import('./legal/legal.module').then(m => m.LegalPageModule)
+    },
+    {
+        path: 'mattresses',
+        loadChildren: () => import('./products/mattresses/mattresses.module').then(m => m.MattressesPageModule)
+    },
+    {
+        path: 'slideshow',
+        loadChildren: () => import('./slideshow/slideshow.module').then(m => m.SlideshowPageModule)
+    },
+    {
+        path: 'cart',
+        loadChildren: () => import('./cart/cart.module').then(m => m.CartPageModule)
+    },
+    {
+        path: 'no-page-found',
+        loadChildren: () => import('./page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
+    },
     {
         path: '**',
-        loadChildren: () => import('./page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
+        loadChildren: () => import('./page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
     },
 
 ];
