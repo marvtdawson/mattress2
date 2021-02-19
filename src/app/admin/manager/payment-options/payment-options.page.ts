@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentOptionsPage implements OnInit {
 
+  pageTitle = 'Manage Payment Options';
   constructor() { }
 
   ngOnInit() {

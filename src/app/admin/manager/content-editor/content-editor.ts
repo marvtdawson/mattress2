@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
 })
 export class ContentEditorPage implements OnInit {
 
-    pageTitle = 'Page Manager';
+    pageTitle = 'Manage Pages';
 
     constructor(private modalController: ModalController,
                 private router: Router) {

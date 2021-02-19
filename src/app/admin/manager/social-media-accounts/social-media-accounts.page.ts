@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialMediaAccountsPage implements OnInit {
 
+  pageTitle = 'Manage Social Media Accounts';
   constructor() { }
 
   ngOnInit() {
