@@ -33,10 +33,6 @@ const routes: Routes = [
         loadChildren: () => import('./customer-service/mobile-app/mobile-app.module').then(m => m.MobileAppPageModule)
     },
     {
-        path: 'add-product',
-        loadChildren: () => import('./admin/manager/products/add-product/add-product.module').then(m => m.AddProductPageModule)
-    },
-    {
         path: 'about',
         loadChildren: () => import('./about/about.module').then(m => m.AboutPageModule)
     },
@@ -103,8 +99,7 @@ const routes: Routes = [
     {
         path: '**',
         loadChildren: () => import('./page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
-    },
-
+    }
 ];
 
 @NgModule({

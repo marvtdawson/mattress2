@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SiteDataService} from '../../../providers/site-data/site-data.service';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivacyPolicyPage implements OnInit {
 
-  constructor() { }
+  pageTitle = 'Private Policy';
+  siteName = this.siteData.siteName;
+  constructor(private siteData: SiteDataService) { }
 
   ngOnInit() {
   }

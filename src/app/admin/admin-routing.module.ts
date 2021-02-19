@@ -9,17 +9,21 @@ import {ProfilePage} from './customers/profile/profile.page';
 import {AdminPage} from './admin.page';
 import {AddProductPage} from './manager/products/add-product/add-product.page';
 import {PrivacyPolicyPage} from './customers/privacy-policy/privacy-policy.page';
-import {WishListPage} from './customers/wish-list/wish-list/wish-list.page';
+import {WishListPage} from './customers/wish-list/wish-list.page';
 import {AddNewPage} from './manager/content-editor/add-new/add-new.page';
 import {DeletePage} from './manager/content-editor/delete/delete.page';
 import {EditPage} from './manager/content-editor/edit/edit.page';
 import {ContentEditorPage} from './manager/content-editor/content-editor';
 import {ManagerPageModule} from './manager/manager.module';
 import {ProductsPage} from '../products/products.page';
+import {CartPage} from './cart/cart.page';
 
 const adminChildRoutes: Routes = [
     { path: 'admin', component: AdminPage,
         children: [
+            {
+                path: 'manage', component: CartPage,
+            },
             {
                path: 'manage', component: ManagerPage,
                 children: [

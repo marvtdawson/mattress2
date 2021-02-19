@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import {Capacitor, Plugins, Permissions} from '@capacitor/core';
+import {SiteDataService} from '../providers/site-data/site-data.service';
 const { Device } = Plugins;
 const { Storage } = Plugins;
 
@@ -15,6 +16,7 @@ const { Storage } = Plugins;
 })
 export class AppComponent {
   public isPermitted = false;
+  siteName = this.siteData.siteName;
   public appPages = [
     {
       title: 'Home',
@@ -32,7 +34,8 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private alertCtrl: AlertController,
-    private modal: ModalController
+    private modal: ModalController,
+    private siteData: SiteDataService
   ) {
     this.initializeApp();
   }

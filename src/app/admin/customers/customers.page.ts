@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomersPage implements OnInit {
 
+  pageTitle = 'Profile Account Settings';
   constructor() { }
 
   ngOnInit() {

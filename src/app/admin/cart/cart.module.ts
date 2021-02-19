@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { WishListPageRoutingModule } from './wish-list-routing.module';
+import { CartPageRoutingModule } from './cart-routing.module';
 
-import { WishListPage } from './wish-list.page';
-import {LayoutModule} from '../../../../layout/layout.module';
+import { CartPage } from './cart.page';
+import {LayoutModule} from '../../layout/layout.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WishListPageRoutingModule,
+    CartPageRoutingModule,
     LayoutModule
   ],
-  declarations: [WishListPage]
+  declarations: [CartPage]
 })
-export class WishListPageModule {}
+export class CartPageModule {}
