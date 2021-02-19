@@ -40,13 +40,13 @@ export class AdminPage implements OnInit {
         },
         {
             userRole : 'SU',
-            linkPath: '/admin/manage/wish-lists',
+            linkPath: '/admin/manage/wish-list',
             icon: 'fas fa-star-shooting fa-2x',
             linkText: 'Manage Wish List'
         },
         {
             userRole: 'SU',
-            linkPath: '/admin/manage/requests',
+            linkPath: '/admin/manage/delivery-requests',
             icon: 'fad fa-truck fa-2x',
             linkText: 'Manage Delivery Requests'
         },
@@ -58,7 +58,7 @@ export class AdminPage implements OnInit {
         },
         {
             userRole : 'SU',
-            linkPath: '/admin/manage/manage-employees',
+            linkPath: '/admin/manage/employees',
             icon: 'fas fa-users fa-2x',
             linkText: 'Manage Employees'
         },
