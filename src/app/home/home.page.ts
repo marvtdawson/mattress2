@@ -9,22 +9,22 @@ import {SiteDataService} from '../../providers/site-data/site-data.service';
 })
 export class HomePage {
 
-  pageId = 3265;
+  // pageId = 3265;
   pageTitle = 'Home';
   pageDescription = 'Welcome to the home of MattressandThings.com';
   testImg = './assets/img/matts/amerisleep_mattress-iso_as3.jpg';
   socialMediaImg = './assets/img/site/social-icons/socialmediamarketing.jpg';
-  thumbnailImg = false;
-  mattressImg = '../../assets/img/matts/beautyrest_black_mariela.png';
-  bedroomImg = '../../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg';
-  livingroomImg = '../../assets/img/liv_rm/Compact-apartment-Moscow.jpg';
-  kitchenImg = './assets/img/kitch/kitchen_image_2.jpg';
-  diningroomImg = './assets/img/dining_rm/dining-tables-slide-0XQB-jumbo.jpg';
-  bathroomImg = './assets/img/bath_rm/bathroom_1.jpg';
-  lampImg = './assets/img/lamps/1-splash-mobile-Table-Lamps.jpg';
-  tableImg = './assets/img/tables/tyler-creek-counter-height-dining-room-table-0.jpg';
-  reclinerImg = './assets/img/recliners/lansing-tufted-leather-recliner-with-nailheads-o.jpg';
-  accessoriesImg = './assets/img/accessories/eb079052b1972b81297106d1c55c573e.jpg';
+  // thumbnailImg = false;
+  // mattressImg = '../../assets/img/matts/beautyrest_black_mariela.png';
+  // bedroomImg = '../../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg';
+  // livingroomImg = '../../assets/img/liv_rm/Compact-apartment-Moscow.jpg';
+  // kitchenImg = './assets/img/kitch/kitchen_image_2.jpg';
+  // diningroomImg = './assets/img/dining_rm/dining-tables-slide-0XQB-jumbo.jpg';
+  // bathroomImg = './assets/img/bath_rm/bathroom_1.jpg';
+  // lampImg = './assets/img/lamps/1-splash-mobile-Table-Lamps.jpg';
+  // tableImg = './assets/img/tables/tyler-creek-counter-height-dining-room-table-0.jpg';
+  // reclinerImg = './assets/img/recliners/lansing-tufted-leather-recliner-with-nailheads-o.jpg';
+  // accessoriesImg = './assets/img/accessories/eb079052b1972b81297106d1c55c573e.jpg';
   public departments = [
     {
       thumbnailImg: true,

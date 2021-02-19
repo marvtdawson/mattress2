@@ -45,7 +45,8 @@ export class AppComponent {
       if (Capacitor.isPluginAvailable('Device')) {
         Plugins.Device.getInfo().then().catch(error => console.error(error));
         const deviceInfo = Device.getInfo();
-        console.log(deviceInfo);
+        // TODO remove console log display device info
+        // console.log(deviceInfo);
       }
       const permissions = Permissions.requestPermissions();
       if (Capacitor.isPluginAvailable('PermissionRequestedEvent')) {
@@ -57,7 +58,8 @@ export class AppComponent {
 
   async checkPermission() {
     const getPermissions = await Storage.get({key : 'currentPermissions'});
-    console.log('My permissions: ' + getPermissions);
+    // TODO remove console log display permissions
+    // console.log('My permissions: ' + getPermissions);
     if (!getPermissions) {
       const alert = await this.alertCtrl.create({
         header: 'Permissions...',

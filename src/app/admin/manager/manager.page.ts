@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as firebase from 'firebase/app';
+// import * as firebase from 'firebase/app';
 @Component({
   selector: 'app-admin-manager',
   templateUrl: './manager.page.html',
@@ -14,9 +14,9 @@ export class ManagerPage implements OnInit {
   }
 
   uploadImage(event) {
-    const storage = firebase.storage();
-    const storageRef = firebase.storage().ref();
-    const productRef = storageRef.child(`products/${this.productDir}`).put(event.file.name);
+    // const storage = firebase.storage();
+    // const storageRef = firebase.storage().ref();
+    // const productRef = storageRef.child(`products/${this.productDir}`).put(event.file.name);
   }
 
 }
