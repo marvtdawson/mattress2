@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ModalController} from '@ionic/angular';
 import {AddNewPage} from './add-new/add-new.page';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-content-editor',
@@ -11,7 +12,8 @@ export class ContentEditorPage implements OnInit {
 
     pageTitle = 'Page Manager';
 
-    constructor(private modalController: ModalController) {
+    constructor(private modalController: ModalController,
+                private router: Router) {
     }
 
 
@@ -26,10 +28,12 @@ export class ContentEditorPage implements OnInit {
     }
 
     async onEditPage() {
-        const modal = await this.modalController.create({
+        // route to confirm registration page
+        this.router.navigateByUrl('/edit').then().catch();
+        /*const modal = await this.modalController.create({
             component: AddNewPage
         });
-        return await modal.present();
+        return await modal.present();*/
     }
 
     async onRemovePage() {

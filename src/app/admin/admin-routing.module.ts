@@ -14,8 +14,8 @@ import {AddNewPage} from './manager/content-editor/add-new/add-new.page';
 import {DeletePage} from './manager/content-editor/delete/delete.page';
 import {EditPage} from './manager/content-editor/edit/edit.page';
 import {ContentEditorPage} from './manager/content-editor/content-editor';
-import {ProductsPage} from '../products/products.page';
 import {ManagerPageModule} from './manager/manager.module';
+import {ProductsPage} from '../products/products.page';
 
 const adminChildRoutes: Routes = [
     { path: 'admin', component: AdminPage,
@@ -34,7 +34,11 @@ const adminChildRoutes: Routes = [
                         children: [
                             { path: 'add', component: AddProductPage }
                         ]
-                    }
+                    },
+                    {
+                        path: 'departments',
+                        loadChildren: () => import('src/app/admin/manager/departments/departments.module').then( m => m.DepartmentsPageModule)
+                    },
                 ]
             },
             { path: 'customers',  component: CustomersPage,
