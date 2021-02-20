@@ -12,7 +12,8 @@ export class AboutPage implements OnInit {
   pageTitle = 'About Us';
   pageDescription = 'Learn all about Mattress & Things history and growth.';
   siteName = this.siteData.siteName;
-  constructor(private siteData: SiteDataService,
+  constructor(
+      private siteData: SiteDataService,
               private titleService: Title,
               private metaData: Meta) {
     // set page title

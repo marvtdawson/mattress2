@@ -35,7 +35,7 @@ export class AppComponent {
     private statusBar: StatusBar,
     private alertCtrl: AlertController,
     private modal: ModalController,
-    private siteData: SiteDataService
+    public siteData: SiteDataService
   ) {
     this.initializeApp();
   }
