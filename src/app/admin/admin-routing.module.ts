@@ -22,9 +22,6 @@ const adminChildRoutes: Routes = [
     { path: 'admin', component: AdminPage,
         children: [
             {
-                path: 'manage', component: CartPage,
-            },
-            {
                path: 'manage', component: ManagerPage,
                 children: [
                     { path: 'content', component: ContentEditorPage,
