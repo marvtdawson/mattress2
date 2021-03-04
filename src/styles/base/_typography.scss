@@ -44,28 +44,33 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
   }
-}
 
-.heading-secondary {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  -webkit-background-clip: text;
-  color: $color-secondary;
-  letter-spacing: 2px;
-  transition: all .2s;
+  .heading-secondary {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: $color-secondary;
+    letter-spacing: 2px;
+    transition: all .2s;
+    // align-content: center;
+    text-align: center;
 
-  // 320px to 375px
-  @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
-    font-size: 1rem;
+    // 320px to 375px
+    @media only screen and (min-width: $bp-smallest) and (max-width: $bp-smaller-1) {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: .5em 1rem 2rem rgba(#000000, .2);
+    }
   }
 
-  &:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: .5em 1rem 2rem rgba(#000000, .2);
-  }
 }
+
+
 
 .heading-tertiary {
   font-size: 1.6rem;
