@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SiteDataService} from '../../providers/site-data/site-data.service';
 
 @Component({
   selector: 'app-page-not-found',
@@ -8,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class PageNotFoundPage implements OnInit {
 
   pageName = 'Page Not Found';
-  constructor() { }
+  siteLogo = this.siteData.siteLogo;
+  constructor(private siteData: SiteDataService) { }
 
   ngOnInit() {
   }
